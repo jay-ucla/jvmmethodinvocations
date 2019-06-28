@@ -10,7 +10,7 @@ public class OtherClass {
     }
     public OtherClass(){
         proxyInstance = (Map) Proxy.newProxyInstance(
-                Main.class.getClassLoader(),
+                ProxiedClass.class.getClassLoader(),
                 new Class[] { Map.class },
                 new DynamicProxy());
     }
