@@ -25,10 +25,10 @@ public class OtherClass {
         privateHello(". You should not be here.");
     }
 
-    public void refelctOnMe(){
+    public void refelctOnMe(Main m){
         try {
-            Method h = Main.class.getMethod("instanceHello");
-            h.invoke(new Main());
+            Method h = Main.class.getMethod("reflectiveHello", String.class);
+            h.invoke(m, "Came from the other class");
         }
         catch(Exception e){
             System.out.println("Caught! You're out!"+e.getMessage());
