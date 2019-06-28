@@ -19,7 +19,7 @@ public class OtherClass {
         privateHello("privately");
     }
     public void instanceHello(String str){
-        privateHello(str);
+        privateHello(str +"privately");
     }
     public void unusedHello(){
         privateHello(". You should not be here.");
@@ -28,7 +28,7 @@ public class OtherClass {
     public void refelctOnMe(Main m){
         try {
             Method h = Main.class.getMethod("reflectiveHello", String.class);
-            h.invoke(m, "Came from the other class");
+            h.invoke(m, ". This call came from the OtherClass.");
         }
         catch(Exception e){
             System.out.println("Caught! You're out!"+e.getMessage());
