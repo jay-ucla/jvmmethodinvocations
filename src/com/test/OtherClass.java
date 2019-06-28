@@ -1,18 +1,18 @@
 package com.test;
 
 import java.lang.reflect.*;
-import java.util.Map;
 
 public class OtherClass {
-    private Map proxyInstance;
+    private ProxiedClass proxy;
     private void privateHello(String str){
         System.out.println("Hello from the other world "+str);
     }
     public OtherClass(){
-        proxyInstance = (Map) Proxy.newProxyInstance(
+        InvocationHandler handler = new DynamicProxy();
+        proxy = (ProxiedClass) Proxy.newProxyInstance(
                 ProxiedClass.class.getClassLoader(),
-                new Class[] { Map.class },
-                new DynamicProxy());
+                new Class[] { ProxiedClass.class },
+                handler);
     }
 
     public void instanceHello(){
@@ -33,5 +33,9 @@ public class OtherClass {
         catch(Exception e){
             System.out.println("Caught! You're out!"+e.getMessage());
         }
+    }
+
+    public void dynamicProxyRun(){
+        proxy.sayHello();
     }
 }

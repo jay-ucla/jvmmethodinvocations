@@ -9,6 +9,6 @@ public class DynamicProxy implements InvocationHandler {
     public Object invoke(Object o, Method method, Object[] objects) throws Throwable {
         System.out.println("Dynamic Proxy hijacked :"+method.getName());
 
-        return method.invoke(o);
+        return 42;
     }
 }
