@@ -1,4 +1,7 @@
 package com.test;
+
+import javax.print.attribute.standard.MediaSize;
+
 public class Main {
 
     public void sayHello(String str){
@@ -44,24 +47,24 @@ public class Main {
 //        }
 
         //tests for compiler messages
-        Main.staticHello("Performing static invocation");
-        Main.staticHello();
-        Main.staticHello("Created Main class instance");
+//        Main.staticHello("Performing static invocation");
+//        Main.staticHello();
+//        Main.staticHello("Created Main class instance");
         Main m = new Main();
-        Main.staticHello("Invoked Main instance method");
-        m.instanceHello("J");
-        Main.staticHello("Invoked other Main instance method");
-        m.instanceHello();
-        Main.staticHello("Invoking Main inner method");
-        m.innerHello();
-        Main.staticHello("Creating instance of Other class");
+//        Main.staticHello("Invoked Main instance method");
+//        m.instanceHello("J");
+//        Main.staticHello("Invoked other Main instance method");
+//        m.instanceHello();
+//        Main.staticHello("Invoking Main inner method");
+//        m.innerHello();
+//        Main.staticHello("Creating instance of Other class");
         OtherClass oc = new OtherClass();
-        Main.staticHello("Invoked OC instance method - should call private hello");
-        oc.instanceHello("J");
-        Main.staticHello("Invoked other OC instance method - should call private hello");
-        oc.instanceHello();
+//        Main.staticHello("Invoked OC instance method - should call private hello");
+//        oc.instanceHello("J");
+//        Main.staticHello("Invoked other OC instance method - should call private hello");
+//        oc.instanceHello();
         Main.staticHello("Invoking main class reflective hello from OC");
-        oc.refelctOnMe(m);
+        OtherClass.refelctOnMe(m);
         Main.staticHello("Invoking dynamic proxy");
         oc.dynamicProxyRun();
     }

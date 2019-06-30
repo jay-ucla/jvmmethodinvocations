@@ -25,7 +25,7 @@ public class OtherClass {
         privateHello(". You should not be here.");
     }
 
-    public void refelctOnMe(Main m){
+    public static void refelctOnMe(Main m){
         try {
             Method h = Main.class.getMethod("reflectiveHello", String.class);
             h.invoke(m, ". This call came from the OtherClass.");
