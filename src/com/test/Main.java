@@ -1,6 +1,7 @@
 package com.test;
 
-import javax.print.attribute.standard.MediaSize;
+import java.lang.reflect.Method;
+import java.util.function.Predicate;
 
 public class Main {
 
@@ -36,36 +37,57 @@ public class Main {
         System.out.println("Hello reflective world "+str);
     }
 
+
     public static void main(String[] args) {
 //        for(int i=0;;i++){
 //            try {
-//                Thread.sleep(1000);
+//                Thread.sleep(10000);
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }
 //            m.sayHello("Jay"+i);
 //        }
-
         //tests for compiler messages
-//        Main.staticHello("Performing static invocation");
-//        Main.staticHello();
-//        Main.staticHello("Created Main class instance");
+        Main.staticHello("Performing static invocation");
+
+        Main.staticHello();
+        Main.staticHello("Created Main class instance");
         Main m = new Main();
-//        Main.staticHello("Invoked Main instance method");
-//        m.instanceHello("J");
-//        Main.staticHello("Invoked other Main instance method");
-//        m.instanceHello();
-//        Main.staticHello("Invoking Main inner method");
-//        m.innerHello();
-//        Main.staticHello("Creating instance of Other class");
+        Predicate<String> lambdaPrint = t -> {
+            System.out.println("Hi from lamda land!");
+            return t.length() > 10;
+        };
+        lambdaPrint.test("1");
+
+
+        Main.staticHello("Invoked Main instance method");
+        m.instanceHello("J");
+        Main.staticHello("Invoked other Main instance method");
+        m.instanceHello();
+        Main.staticHello("Invoking Main inner method");
+        m.innerHello();
+        Main.staticHello("Creating instance of Other class");
         OtherClass oc = new OtherClass();
-//        Main.staticHello("Invoked OC instance method - should call private hello");
-//        oc.instanceHello("J");
-//        Main.staticHello("Invoked other OC instance method - should call private hello");
-//        oc.instanceHello();
+        Main.staticHello("Invoked OC instance method - should call private hello");
+        oc.instanceHello("J");
+        Main.staticHello("Invoked other OC instance method - should call private hello");
+        oc.instanceHello();
         Main.staticHello("Invoking main class reflective hello from OC");
         OtherClass.refelctOnMe(m);
         Main.staticHello("Invoking dynamic proxy");
         oc.dynamicProxyRun();
+
+        Main.staticHello("Invoking on object of Concrete A");
+        interfaceClass ic = new concreteA();
+        ic.interfacedHello("J");
+
+        Main.staticHello("Creating anonymous class");
+        interfaceClass ac = new interfaceClass() {
+            @Override
+            public void interfacedHello(String str) {
+                System.out.println("Hi from the anonymous class");
+            }
+        } ;
+        ac.interfacedHello("");
     }
 }

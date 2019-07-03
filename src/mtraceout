@@ -1,0 +1,295 @@
+Performing static invocation
+Hello static world
+Created Main class instance
+Hi from lamda land!
+Invoked Main instance method
+Hello instance world J
+Invoked other Main instance method
+Hello instance world
+Invoking Main inner method
+Hello instance world
+Creating instance of Other class
+Invoked OC instance method - should call private hello
+Hello from the other world Jprivately
+Invoked other OC instance method - should call private hello
+Hello from the other world privately
+Invoking main class reflective hello from OC
+Hello reflective world . This call came from the OtherClass.
+Invoking dynamic proxy
+Dynamic Proxy hijacked : sayHello
+Invoking on object of Concrete A
+Hello from class A J
+VMStart
+VMInit main
+ThreadStart Signal Dispatcher
+ThreadStart main
+ThreadEnd main
+ThreadStart DestroyJavaVM
+ThreadEnd DestroyJavaVM
+VMDeath
+Begin Class Stats
+Class java/lang/String 126635 calls
+	Method charAt (I)C 80918 calls 80918 returns
+	Method equals (Ljava/lang/Object;)Z 20371 calls 20371 returns
+	Method hashCode ()I 5789 calls 5789 returns
+	Method length ()I 5268 calls 5268 returns
+	Method <init> ([CII)V 2155 calls 2155 returns
+	Method getChars (II[CI)V 1652 calls 1652 returns
+	Method <init> ([CZ)V 1088 calls 1088 returns
+	Method indexOf (II)I 1081 calls 1081 returns
+	Method indexOf (I)I 965 calls 965 returns
+	Method substring (II)Ljava/lang/String; 891 calls 891 returns
+	Method lastIndexOf (II)I 786 calls 786 returns
+	Method lastIndexOf (I)I 786 calls 786 returns
+	Method replace (CC)Ljava/lang/String; 618 calls 618 returns
+	Method startsWith (Ljava/lang/String;I)Z 517 calls 517 returns
+	Method indexOf ([CII[CIII)I 452 calls 452 returns
+	Method indexOf (Ljava/lang/String;I)I 452 calls 452 returns
+	Method indexOf (Ljava/lang/String;)I 425 calls 425 returns
+	Method endsWith (Ljava/lang/String;)Z 350 calls 350 returns
+	Method substring (I)Ljava/lang/String; 320 calls 320 returns
+	Method toCharArray ()[C 265 calls 265 returns
+	Method lastIndexOf ([CII[CIII)I 186 calls 186 returns
+	Method lastIndexOf (Ljava/lang/String;I)I 186 calls 186 returns
+	Method lastIndexOf (Ljava/lang/String;)I 186 calls 186 returns
+	Method startsWith (Ljava/lang/String;)Z 167 calls 167 returns
+	Method getBytes (Ljava/lang/String;)[B 79 calls 79 returns
+	Method <init> ([BLjava/lang/String;)V 78 calls 78 returns
+	Method <init> ([BIILjava/lang/String;)V 78 calls 78 returns
+	Method checkBounds ([BII)V 78 calls 78 returns
+	Method toString ()Ljava/lang/String; 73 calls 73 returns
+	Method contains (Ljava/lang/CharSequence;)Z 72 calls 72 returns
+	Method toLowerCase ()Ljava/lang/String; 50 calls 50 returns
+	Method toLowerCase (Ljava/util/Locale;)Ljava/lang/String; 50 calls 50 returns
+	Method <init> ([C)V 45 calls 45 returns
+	Method valueOf (C)Ljava/lang/String; 39 calls 39 returns
+	Method valueOf ([C)Ljava/lang/String; 37 calls 37 returns
+	Method regionMatches (ZILjava/lang/String;II)Z 21 calls 21 returns
+	Method equalsIgnoreCase (Ljava/lang/String;)Z 16 calls 16 returns
+	Method concat (Ljava/lang/String;)Ljava/lang/String; 14 calls 14 returns
+	Method getChars ([CI)V 14 calls 14 returns
+	Method valueOf (Ljava/lang/Object;)Ljava/lang/String; 13 calls 13 returns
+	Method toUpperCase (Ljava/util/Locale;)Ljava/lang/String; 3 calls 3 returns
+	Method trim ()Ljava/lang/String; 1 calls 1 returns
+Class java/lang/invoke/MemberName 15906 calls
+	Method testFlags (II)Z 2991 calls 2991 returns
+	Method testAnyFlags (I)Z 1924 calls 1924 returns
+	Method isInvocable ()Z 1856 calls 1856 returns
+	Method testAllFlags (I)Z 1067 calls 1067 returns
+	Method getDeclaringClass ()Ljava/lang/Class; 1061 calls 1061 returns
+	Method getMethodType ()Ljava/lang/invoke/MethodType; 832 calls 832 returns
+	Method isStatic ()Z 744 calls 744 returns
+	Method isConstructor ()Z 730 calls 730 returns
+	Method getMethodOrFieldType ()Ljava/lang/invoke/MethodType; 713 calls 713 returns
+	Method getInvocationType ()Ljava/lang/invoke/MethodType; 483 calls 483 returns
+	Method getReferenceKind ()B 406 calls 406 returns
+	Method initResolved (Z)V 356 calls 356 returns
+	Method isResolved ()Z 308 calls 308 returns
+	Method getName ()Ljava/lang/String; 216 calls 216 returns
+	Method access$002 (Ljava/lang/invoke/MemberName;Ljava/lang/Object;)Ljava/lang/Object; 179 calls 179 returns
+	Method clone ()Ljava/lang/invoke/MemberName; 179 calls 179 returns
+	Method flagsMods (IIB)I 179 calls 179 returns
+	Method init (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Object;I)V 179 calls 179 returns
+	Method access$200 (Ljava/lang/invoke/MemberName;Z)V 177 calls 177 returns
+	Method checkForTypeAlias (Ljava/lang/Class;)V 177 calls 177 returns
+	Method isMethod ()Z 175 calls 175 returns
+	Method <init> (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/invoke/MethodType;B)V 166 calls 166 returns
+	Method isPrivate ()Z 141 calls 141 returns
+	Method <init> ()V 118 calls 118 returns
+	Method isField ()Z 88 calls 88 returns
+	Method getFieldType ()Ljava/lang/Class; 84 calls 84 returns
+	Method isPackage ()Z 68 calls 68 returns
+	Method isGetter ()Z 46 calls 46 returns
+	Method isCallerSensitive ()Z 37 calls 37 returns
+	Method expandFromVM ()V 36 calls 36 returns
+	Method getClassLoader ()Ljava/lang/ClassLoader; 36 calls 36 returns
+	Method isVarargs ()Z 35 calls 35 returns
+	Method <init> (Ljava/lang/reflect/Method;Z)V 20 calls 20 returns
+	Method <init> (Ljava/lang/reflect/Method;)V 20 calls 20 returns
+	Method isProtected ()Z 11 calls 11 returns
+	Method getType ()Ljava/lang/Object; 11 calls 11 returns
+	Method <init> (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;B)V 10 calls 10 returns
+	Method isVolatile ()Z 10 calls 10 returns
+	Method isPublic ()Z 8 calls 8 returns
+	Method getFactory ()Ljava/lang/invoke/MemberName$Factory; 6 calls 6 returns
+	Method getName (Ljava/lang/Object;)Ljava/lang/String; 4 calls 4 returns
+	Method <init> (BLjava/lang/Class;Ljava/lang/String;Ljava/lang/Object;)V 3 calls 3 returns
+	Method hashCode ()I 3 calls 3 returns
+	Method getModifiers ()I 3 calls 3 returns
+	Method makeAccessException ()Ljava/lang/ReflectiveOperationException; 2 calls 2 returns
+	Method message ()Ljava/lang/String; 2 calls 2 returns
+	Method toString ()Ljava/lang/String; 2 calls 2 returns
+	Method isType ()Z 2 calls 2 returns
+	Method equals (Ljava/lang/invoke/MemberName;)Z 1 calls 1 returns
+	Method asNormalOriginal ()Ljava/lang/invoke/MemberName; 1 calls 1 returns
+Class java/lang/AbstractStringBuilder 11284 calls
+	Method ensureCapacityInternal (I)V 4557 calls 4557 returns
+	Method append (C)Ljava/lang/AbstractStringBuilder; 2413 calls 2413 returns
+	Method append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 1610 calls 1610 returns
+	Method <init> (I)V 1202 calls 1202 returns
+	Method newCapacity (I)I 968 calls 968 returns
+	Method append ([CII)Ljava/lang/AbstractStringBuilder; 396 calls 396 returns
+	Method append (I)Ljava/lang/AbstractStringBuilder; 116 calls 116 returns
+	Method append (Ljava/lang/CharSequence;II)Ljava/lang/AbstractStringBuilder; 21 calls 21 returns
+	Method append (J)Ljava/lang/AbstractStringBuilder; 1 calls 1 returns
+Class jdk/internal/org/objectweb/asm/ClassWriter 10650 calls
+	Method get (Ljdk/internal/org/objectweb/asm/Item;)Ljdk/internal/org/objectweb/asm/Item; 3432 calls 3432 returns
+	Method put (Ljdk/internal/org/objectweb/asm/Item;)V 2262 calls 2262 returns
+	Method newUTF8 (Ljava/lang/String;)I 1758 calls 1758 returns
+	Method addType (Ljava/lang/String;)I 757 calls 757 returns
+	Method newClassItem (Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/Item; 438 calls 438 returns
+	Method put122 (III)V 358 calls 358 returns
+	Method newClass (Ljava/lang/String;)I 347 calls 347 returns
+	Method addType (Ljdk/internal/org/objectweb/asm/Item;)Ljdk/internal/org/objectweb/asm/Item; 192 calls 192 returns
+	Method newNameTypeItem (Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/Item; 179 calls 179 returns
+	Method newNameType (Ljava/lang/String;Ljava/lang/String;)I 179 calls 179 returns
+	Method newMethodItem (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljdk/internal/org/objectweb/asm/Item; 179 calls 179 returns
+	Method visitMethod (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/MethodVisitor; 104 calls 104 returns
+	Method newFieldItem (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/Item; 99 calls 99 returns
+	Method toByteArray ()[B 76 calls 76 returns
+	Method visit (IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V 76 calls 76 returns
+	Method <init> (I)V 76 calls 76 returns
+	Method visitSource (Ljava/lang/String;Ljava/lang/String;)V 75 calls 75 returns
+	Method newString (Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/Item; 16 calls 16 returns
+	Method newConstItem (Ljava/lang/Object;)Ljdk/internal/org/objectweb/asm/Item; 16 calls 16 returns
+	Method visitField (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Ljdk/internal/org/objectweb/asm/FieldVisitor; 12 calls 12 returns
+	Method newConst (Ljava/lang/Object;)I 8 calls 8 returns
+	Method addUninitializedType (Ljava/lang/String;I)I 6 calls 6 returns
+	Method visitEnd ()V 4 calls 4 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class java/lang/invoke/MethodType 10209 calls
+	Method parameterType (I)Ljava/lang/Class; 1123 calls 1123 returns
+	Method returnType ()Ljava/lang/Class; 947 calls 947 returns
+	Method checkPtype (Ljava/lang/Class;)V 946 calls 946 returns
+	Method checkSlotCount (I)V 809 calls 809 returns
+	Method hashCode ()I 793 calls 793 returns
+	Method makeImpl (Ljava/lang/Class;[Ljava/lang/Class;Z)Ljava/lang/invoke/MethodType; 614 calls 614 returns
+	Method <init> ([Ljava/lang/Class;Ljava/lang/Class;)V 614 calls 614 returns
+	Method equals (Ljava/lang/Object;)Z 452 calls 452 returns
+	Method equals (Ljava/lang/invoke/MethodType;)Z 439 calls 439 returns
+	Method checkPtypes ([Ljava/lang/Class;)I 424 calls 424 returns
+	Method form ()Ljava/lang/invoke/MethodTypeForm; 338 calls 338 returns
+	Method parameterCount ()I 304 calls 304 returns
+	Method parameterSlotCount ()I 293 calls 293 returns
+	Method insertParameterTypes (I[Ljava/lang/Class;)Ljava/lang/invoke/MethodType; 248 calls 248 returns
+	Method ptypes ()[Ljava/lang/Class; 237 calls 237 returns
+	Method toMethodDescriptorString ()Ljava/lang/String; 200 calls 200 returns
+	Method checkRtype (Ljava/lang/Class;)V 176 calls 176 returns
+	Method <init> (Ljava/lang/Class;[Ljava/lang/Class;Z)V 176 calls 176 returns
+	Method erase ()Ljava/lang/invoke/MethodType; 167 calls 167 returns
+	Method parameterArray ()[Ljava/lang/Class; 141 calls 141 returns
+	Method basicType ()Ljava/lang/invoke/MethodType; 124 calls 124 returns
+	Method parameterList ()Ljava/util/List; 105 calls 105 returns
+	Method methodType (Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/invoke/MethodType; 92 calls 92 returns
+	Method genericMethodType (I)Ljava/lang/invoke/MethodType; 56 calls 56 returns
+	Method genericMethodType (IZ)Ljava/lang/invoke/MethodType; 56 calls 56 returns
+	Method methodType (Ljava/lang/Class;)Ljava/lang/invoke/MethodType; 54 calls 54 returns
+	Method invokerType ()Ljava/lang/invoke/MethodType; 53 calls 53 returns
+	Method appendParameterTypes ([Ljava/lang/Class;)Ljava/lang/invoke/MethodType; 42 calls 42 returns
+	Method listToArray (Ljava/util/List;)[Ljava/lang/Class; 41 calls 41 returns
+	Method fromMethodDescriptorString (Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/invoke/MethodType; 40 calls 40 returns
+	Method changeReturnType (Ljava/lang/Class;)Ljava/lang/invoke/MethodType; 30 calls 30 returns
+	Method invokers ()Ljava/lang/invoke/Invokers; 22 calls 22 returns
+	Method toFieldDescriptorString (Ljava/lang/Class;)Ljava/lang/String; 18 calls 18 returns
+	Method methodType (Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/MethodType; 8 calls 8 returns
+	Method methodType (Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/invoke/MethodType; 8 calls 8 returns
+	Method dropParameterTypes (II)Ljava/lang/invoke/MethodType; 4 calls 4 returns
+	Method leadingReferenceParameter ()Ljava/lang/Class; 4 calls 4 returns
+	Method isConvertibleTo (Ljava/lang/invoke/MethodType;)Z 2 calls 2 returns
+	Method toString ()Ljava/lang/String; 2 calls 2 returns
+	Method lastParameterType ()Ljava/lang/Class; 2 calls 2 returns
+	Method asCollectorType (Ljava/lang/Class;I)Ljava/lang/invoke/MethodType; 2 calls 2 returns
+	Method changeParameterType (ILjava/lang/Class;)Ljava/lang/invoke/MethodType; 2 calls 2 returns
+	Method insertParameterTypes (ILjava/util/List;)Ljava/lang/invoke/MethodType; 1 calls 1 returns
+Class jdk/internal/org/objectweb/asm/ByteVector 9037 calls
+	Method putShort (I)Ljdk/internal/org/objectweb/asm/ByteVector; 2738 calls 2738 returns
+	Method putByte (I)Ljdk/internal/org/objectweb/asm/ByteVector; 1927 calls 1927 returns
+	Method putUTF8 (Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/ByteVector; 1379 calls 1379 returns
+	Method put12 (II)Ljdk/internal/org/objectweb/asm/ByteVector; 1060 calls 1060 returns
+	Method putInt (I)Ljdk/internal/org/objectweb/asm/ByteVector; 526 calls 526 returns
+	Method putByteArray ([BII)Ljdk/internal/org/objectweb/asm/ByteVector; 400 calls 400 returns
+	Method <init> ()V 400 calls 400 returns
+	Method enlarge (I)V 290 calls 290 returns
+	Method put11 (II)Ljdk/internal/org/objectweb/asm/ByteVector; 241 calls 241 returns
+	Method <init> (I)V 76 calls 76 returns
+Class jdk/internal/org/objectweb/asm/Item 7192 calls
+	Method set (ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V 3426 calls 3426 returns
+	Method <init> (ILjdk/internal/org/objectweb/asm/Item;)V 2262 calls 2262 returns
+	Method isEqualTo (Ljdk/internal/org/objectweb/asm/Item;)Z 1200 calls 1200 returns
+	Method <init> ()V 304 calls 304 returns
+Class java/lang/Class 6657 calls
+	Method getName ()Ljava/lang/String; 1721 calls 1721 returns
+	Method getClassLoader0 ()Ljava/lang/ClassLoader; 1428 calls 1428 returns
+	Method getClassLoader ()Ljava/lang/ClassLoader; 1404 calls 1404 returns
+	Method getEnclosingMethodInfo ()Ljava/lang/Class$EnclosingMethodInfo; 328 calls 328 returns
+	Method getSimpleName ()Ljava/lang/String; 190 calls 190 returns
+	Method getSimpleBinaryName ()Ljava/lang/String; 187 calls 187 returns
+	Method getEnclosingClass ()Ljava/lang/Class; 187 calls 187 returns
+	Method getDeclaringClass ()Ljava/lang/Class; 187 calls 187 returns
+	Method isLocalOrAnonymousClass ()Z 141 calls 141 returns
+	Method isLocalClass ()Z 141 calls 141 returns
+	Method isAnonymousClass ()Z 141 calls 141 returns
+	Method desiredAssertionStatus ()Z 61 calls 61 returns
+	Method getReflectionFactory ()Lsun/reflect/ReflectionFactory; 59 calls 59 returns
+	Method reflectionData ()Ljava/lang/Class$ReflectionData; 58 calls 58 returns
+	Method checkInitted ()V 57 calls 57 returns
+	Method checkMemberAccess (ILjava/lang/Class;Z)V 49 calls 49 returns
+	Method arrayContentsEq ([Ljava/lang/Object;[Ljava/lang/Object;)Z 41 calls 41 returns
+	Method privateGetDeclaredMethods (Z)[Ljava/lang/reflect/Method; 30 calls 30 returns
+	Method searchMethods ([Ljava/lang/reflect/Method;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; 29 calls 29 returns
+	Method newReflectionData (Ljava/lang/ref/SoftReference;I)Ljava/lang/Class$ReflectionData; 29 calls 29 returns
+	Method searchFields ([Ljava/lang/reflect/Field;Ljava/lang/String;)Ljava/lang/reflect/Field; 20 calls 20 returns
+	Method getDeclaredMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; 20 calls 20 returns
+	Method privateGetDeclaredFields (Z)[Ljava/lang/reflect/Field; 17 calls 17 returns
+	Method getDeclaredField (Ljava/lang/String;)Ljava/lang/reflect/Field; 17 calls 17 returns
+	Method checkPackageAccess (Ljava/lang/ClassLoader;Z)V 14 calls 14 returns
+	Method privateGetMethodRecursive (Ljava/lang/String;[Ljava/lang/Class;ZLjava/lang/Class$MethodArray;)Ljava/lang/reflect/Method; 9 calls 9 returns
+	Method getMethod0 (Ljava/lang/String;[Ljava/lang/Class;Z)Ljava/lang/reflect/Method; 9 calls 9 returns
+	Method privateGetDeclaredConstructors (Z)[Ljava/lang/reflect/Constructor; 9 calls 9 returns
+	Method getMethod (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method; 9 calls 9 returns
+	Method getConstructor0 ([Ljava/lang/Class;I)Ljava/lang/reflect/Constructor; 8 calls 8 returns
+	Method newInstance ()Ljava/lang/Object; 8 calls 8 returns
+	Method forName (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class; 8 calls 8 returns
+	Method forName (Ljava/lang/String;)Ljava/lang/Class; 8 calls 8 returns
+	Method asSubclass (Ljava/lang/Class;)Ljava/lang/Class; 7 calls 7 returns
+	Method isAsciiDigit (C)Z 7 calls 7 returns
+	Method cast (Ljava/lang/Object;)Ljava/lang/Object; 6 calls 6 returns
+	Method access$200 ([Ljava/lang/reflect/Field;Ljava/lang/String;)Ljava/lang/reflect/Field; 3 calls 3 returns
+	Method access$502 (Z)Z 1 calls 1 returns
+	Method access$100 (Ljava/lang/Class;Z)[Ljava/lang/reflect/Field; 1 calls 1 returns
+	Method copyConstructors ([Ljava/lang/reflect/Constructor;)[Ljava/lang/reflect/Constructor; 1 calls 1 returns
+	Method copyMethods ([Ljava/lang/reflect/Method;)[Ljava/lang/reflect/Method; 1 calls 1 returns
+	Method privateGetPublicMethods ()[Ljava/lang/reflect/Method; 1 calls 1 returns
+	Method getProtectionDomain ()Ljava/security/ProtectionDomain; 1 calls 1 returns
+	Method getDeclaredConstructors ()[Ljava/lang/reflect/Constructor; 1 calls 1 returns
+	Method getConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor; 1 calls 1 returns
+	Method getMethods ()[Ljava/lang/reflect/Method; 1 calls 1 returns
+	Method getInterfaces ()[Ljava/lang/Class; 1 calls 1 returns
+Class java/util/concurrent/ConcurrentHashMap 6051 calls
+	Method tabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;I)Ljava/util/concurrent/ConcurrentHashMap$Node; 2188 calls 2188 returns
+	Method spread (I)I 1086 calls 1086 returns
+	Method get (Ljava/lang/Object;)Ljava/lang/Object; 640 calls 640 returns
+	Method setTabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;ILjava/util/concurrent/ConcurrentHashMap$Node;)V 545 calls 545 returns
+	Method putVal (Ljava/lang/Object;Ljava/lang/Object;Z)Ljava/lang/Object; 438 calls 438 returns
+	Method putIfAbsent (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 415 calls 415 returns
+	Method casTabAt ([Ljava/util/concurrent/ConcurrentHashMap$Node;ILjava/util/concurrent/ConcurrentHashMap$Node;Ljava/util/concurrent/ConcurrentHashMap$Node;)Z 346 calls 346 returns
+	Method addCount (JI)V 301 calls 301 returns
+	Method put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 23 calls 23 returns
+	Method resizeStamp (I)I 16 calls 16 returns
+	Method initTable ()[Ljava/util/concurrent/ConcurrentHashMap$Node; 12 calls 12 returns
+	Method <init> ()V 11 calls 11 returns
+	Method sumCount ()J 8 calls 8 returns
+	Method transfer ([Ljava/util/concurrent/ConcurrentHashMap$Node;[Ljava/util/concurrent/ConcurrentHashMap$Node;)V 8 calls 8 returns
+	Method computeIfAbsent (Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object; 7 calls 7 returns
+	Method <init> (IFI)V 2 calls 2 returns
+	Method tableSizeFor (I)I 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method replace (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z 1 calls 1 returns
+	Method replaceNode (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 1 calls 1 returns
+Class java/lang/Math 5913 calls
+	Method min (II)I 5605 calls 5605 returns
+	Method max (II)I 293 calls 293 returns
+	Method min (FF)F 12 calls 12 returns
+	Method powerOfTwoD (I)D 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+End Class Stats
