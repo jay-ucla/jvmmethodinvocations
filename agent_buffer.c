@@ -1,6 +1,18 @@
 #include<jvmti.h>
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
+
+char *jvmti_agent_buffer;
+int jvmi_agent_buffer_start=0;
+
+void buffer_print(const char* str){
+	printf("%s",str);
+	//jvmti_agent_buffer = realloc(jvmti_agent_buffer,strlen(str)+jvmi_agent_buffer_start);
+	//memcpy(&jvmti_agent_buffer[jvmi_agent_buffer_start], str, strlen(str));
+	//jvmi_agent_buffer_start+=strlen(str);
+	
+}
 
 static void check_jvmti_errors(jvmtiEnv *jvmti, jvmtiError errnum, const char *str) {
 
@@ -11,9 +23,9 @@ static void check_jvmti_errors(jvmtiEnv *jvmti, jvmtiError errnum, const char *s
         errnum_str = NULL;
 
         (void) (*jvmti)->GetErrorName(jvmti, errnum, &errnum_str);
-
-        fprintf(stderr,"ERROR: JVMTI: [%d] %s - %s", errnum, (errnum_str == NULL ? "Unknown": errnum_str), (str == NULL? "" : str));
-
+	char err[500];
+        sprintf(err,"ERROR: JVMTI: [%d] %s - %s", errnum, (errnum_str == NULL ? "Unknown": errnum_str), (str == NULL? "" : str));
+	buffer_print(err);
     }
 
 };
@@ -34,13 +46,13 @@ static void JNICALL callbackMethodEntry(jvmtiEnv *jvmti, JNIEnv *jni, jthread th
     jvmtiError error, e2, e3;
 
     error = (*jvmti)->GetMethodName(jvmti, method, &name_ptr, &signature_ptr, &generic_ptr);
-    //check_jvmti_errors(jvmti, error, "Unable to get the method name");
+    check_jvmti_errors(jvmti, error, "Unable to get the method name");
     e2 = (*jvmti)->GetMethodDeclaringClass(jvmti, method, &dec_class); 
-    //check_jvmti_errors(jvmti, e2, "Unable to get the class");
+    check_jvmti_errors(jvmti, e2, "Unable to get the class");
     e3 = (*jvmti)->GetClassSignature(jvmti, dec_class, &class_ptr, &generic_ptr);	
 
-    //check_jvmti_errors(jvmti, e3, "Unable to get the class name");
-    	
+    check_jvmti_errors(jvmti, e3, "Unable to get the class name");
+
     if(class_ptr == NULL)
 	return;
     
@@ -51,10 +63,13 @@ static void JNICALL callbackMethodEntry(jvmtiEnv *jvmti, JNIEnv *jni, jthread th
     class_name[4]='\0';
     if(strcmp(class_name,"java")==0 || strcmp(class_name,"sun/")==0 || strcmp(class_name, "jdk/")==0)
 	return;
-    
-    fprintf(stderr,"Entered method %s %s %s\n",class_ptr, name_ptr, signature_ptr);
-    //strcat(jmvti_string, class_ptr);
-    //free(msg);
+    //printf("Entered method %s %s %s\n",class_ptr, name_ptr, signature_ptr);
+    buffer_print(class_ptr);
+    buffer_print(name_ptr);
+    buffer_print(signature_ptr);
+    buffer_print("\n");
+    //(*jvmti)->DeleteLocalRef(dec_class);
+
 };
 
 
@@ -110,3 +125,11 @@ JNIEXPORT jint JNICALL Agent_OnLoad(JavaVM *jvm, char *options, void *reserved){
 
 };
 
+JNIEXPORT void JNICALL Agent_OnUnload(JavaVM *vm){
+	buffer_print("Exiting agent\n");
+	//buffer_print("Exiting agent2\n");
+	printf("%s",jvmti_agent_buffer);
+	//for(unsigned int i=0;i<sizeof(jvmti_agent_buffer)-1;i++)
+	//	dprintf(1,"%s",jvmti_agent_buffer[0]);
+	free(jvmti_agent_buffer);
+}
