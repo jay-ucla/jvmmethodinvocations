@@ -1,0 +1,60 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for vanilla.java:chronicle:jar:1.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 45, column 11
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 70, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building chronicle 1.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ chronicle ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jay/openjdktest/sample-projects/Java-Chronicle/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ chronicle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ chronicle ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jay/openjdktest/sample-projects/Java-Chronicle/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ chronicle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ chronicle ---
+[INFO] Surefire report directory: /home/jay/openjdktest/sample-projects/Java-Chronicle/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running vanilla.java.chronicle.impl.ByteBufferExcerptTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 sec - in vanilla.java.chronicle.impl.ByteBufferExcerptTest
+Running vanilla.java.chronicle.impl.IntIndexedChronicleTest
+/tmp/deleteme.iict created.
+/tmp/deleteme.iict, size=1024
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.034 sec - in vanilla.java.chronicle.impl.IntIndexedChronicleTest
+Running vanilla.java.chronicle.impl.IndexedChronicleTest
+/tmp/deleteme.ict created.
+/tmp/deleteme.ict, size=1024
+/tmp/deleteme.ict, size=1024
+/tmp/deleteme.ict, size=1024
+temp/chroncle-bool-test created.
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.174 sec - in vanilla.java.chronicle.impl.IndexedChronicleTest
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.809 s
+[INFO] Finished at: 2019-07-06T02:15:41-07:00
+[INFO] Final Memory: 11M/303M
+[INFO] ------------------------------------------------------------------------

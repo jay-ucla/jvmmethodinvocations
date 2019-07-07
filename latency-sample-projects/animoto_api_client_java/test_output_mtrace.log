@@ -1,0 +1,311 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.animoto.api:animoto-api:jar:1.3.0
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 60, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Animoto API Client 1.3.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ animoto-api ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jay/openjdktest/sample-projects/animoto_api_client_java/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ animoto-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ animoto-api ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:testCompile (default-testCompile) @ animoto-api ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ animoto-api ---
+[INFO] Surefire report directory: /home/jay/openjdktest/sample-projects/animoto_api_client_java/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.animoto.api.util.CallbackUtilTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.318 sec - in com.animoto.api.util.CallbackUtilTest
+Running com.animoto.api.ApiClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in com.animoto.api.ApiClientTest
+Running com.animoto.api.dto.PayloadTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in com.animoto.api.dto.PayloadTest
+Running com.animoto.api.SongTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in com.animoto.api.SongTest
+Running com.animoto.api.resource.DirectingJobTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec - in com.animoto.api.resource.DirectingJobTest
+Running com.animoto.api.resource.VideoTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in com.animoto.api.resource.VideoTest
+Running com.animoto.api.resource.DirectingAndRenderingJobTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.animoto.api.resource.DirectingAndRenderingJobTest
+Running com.animoto.api.resource.RenderingJobTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.animoto.api.resource.RenderingJobTest
+Running com.animoto.api.resource.StoryboardTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec - in com.animoto.api.resource.StoryboardTest
+Running com.animoto.api.PostrollTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 sec - in com.animoto.api.PostrollTest
+VMStart
+VMInit main
+ThreadStart Signal Dispatcher
+ThreadStart main
+ThreadStart Thread-1
+ThreadStart Thread-0
+ThreadEnd Thread-0
+ThreadEnd main
+VMDeath
+Begin Class Stats
+Class java/lang/String 318341 calls
+	Method charAt (I)C 112110 calls 112110 returns
+	Method length ()I 62521 calls 62521 returns
+	Method equals (Ljava/lang/Object;)Z 29170 calls 29170 returns
+	Method <init> ([CII)V 12021 calls 12021 returns
+	Method getChars (II[CI)V 11670 calls 11670 returns
+	Method startsWith (Ljava/lang/String;I)Z 8778 calls 8778 returns
+	Method hashCode ()I 8206 calls 8206 returns
+	Method toCharArray ()[C 8046 calls 8046 returns
+	Method indexOf (II)I 6773 calls 6773 returns
+	Method substring (II)Ljava/lang/String; 6548 calls 6548 returns
+	Method indexOf (I)I 5016 calls 5016 returns
+	Method startsWith (Ljava/lang/String;)Z 4779 calls 4779 returns
+	Method lastIndexOf (II)I 4533 calls 4533 returns
+	Method lastIndexOf (I)I 4262 calls 4262 returns
+	Method endsWith (Ljava/lang/String;)Z 3999 calls 3999 returns
+	Method indexOf ([CII[CIII)I 3622 calls 3622 returns
+	Method indexOf (Ljava/lang/String;I)I 3622 calls 3622 returns
+	Method <init> ([CZ)V 3107 calls 3107 returns
+	Method replace (CC)Ljava/lang/String; 3025 calls 3025 returns
+	Method indexOf (Ljava/lang/String;)I 2369 calls 2369 returns
+	Method regionMatches (ZILjava/lang/String;II)Z 1786 calls 1786 returns
+	Method equalsIgnoreCase (Ljava/lang/String;)Z 1664 calls 1664 returns
+	Method substring (I)Ljava/lang/String; 1641 calls 1641 returns
+	Method getChars ([CI)V 1064 calls 1064 returns
+	Method concat (Ljava/lang/String;)Ljava/lang/String; 1061 calls 1061 returns
+	Method lastIndexOf ([CII[CIII)I 984 calls 984 returns
+	Method lastIndexOf (Ljava/lang/String;I)I 984 calls 984 returns
+	Method lastIndexOf (Ljava/lang/String;)I 981 calls 981 returns
+	Method getBytes (Ljava/lang/String;)[B 905 calls 905 returns
+	Method checkBounds ([BII)V 368 calls 368 returns
+	Method toLowerCase (Ljava/util/Locale;)Ljava/lang/String; 363 calls 363 returns
+	Method toLowerCase ()Ljava/lang/String; 362 calls 362 returns
+	Method compareTo (Ljava/lang/String;)I 332 calls 332 returns
+	Method compareTo (Ljava/lang/Object;)I 321 calls 321 returns
+	Method toString ()Ljava/lang/String; 294 calls 294 returns
+	Method <init> ([BIILjava/lang/String;)V 237 calls 237 returns
+	Method valueOf (Ljava/lang/Object;)Ljava/lang/String; 199 calls 199 returns
+	Method trim ()Ljava/lang/String; 152 calls 152 returns
+	Method <init> ([BIII)V 131 calls 131 returns
+	Method <init> ([BLjava/lang/String;)V 106 calls 106 returns
+	Method toUpperCase (Ljava/util/Locale;)Ljava/lang/String; 99 calls 99 returns
+	Method codePointAt (I)I 64 calls 64 returns
+	Method <init> ([C)V 54 calls 54 returns
+	Method isEmpty ()Z 5 calls 5 returns
+	Method contains (Ljava/lang/CharSequence;)Z 4 calls 4 returns
+	Method toUpperCase ()Ljava/lang/String; 2 calls 2 returns
+	Method regionMatches (ILjava/lang/String;II)Z 1 calls 1 returns
+Class java/lang/AbstractStringBuilder 72278 calls
+	Method ensureCapacityInternal (I)V 30440 calls 30440 returns
+	Method append (C)Ljava/lang/AbstractStringBuilder; 18794 calls 18794 returns
+	Method append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 11527 calls 11527 returns
+	Method newCapacity (I)I 6456 calls 6456 returns
+	Method <init> (I)V 4638 calls 4638 returns
+	Method length ()I 242 calls 242 returns
+	Method append (I)Ljava/lang/AbstractStringBuilder; 60 calls 60 returns
+	Method delete (II)Ljava/lang/AbstractStringBuilder; 59 calls 59 returns
+	Method append (Z)Ljava/lang/AbstractStringBuilder; 25 calls 25 returns
+	Method append (Ljava/lang/CharSequence;II)Ljava/lang/AbstractStringBuilder; 24 calls 24 returns
+	Method setLength (I)V 4 calls 4 returns
+	Method insert (ILjava/lang/String;)Ljava/lang/AbstractStringBuilder; 3 calls 3 returns
+	Method append (J)Ljava/lang/AbstractStringBuilder; 3 calls 3 returns
+	Method getChars (II[CI)V 3 calls 3 returns
+Class java/util/HashMap 53956 calls
+	Method hash (Ljava/lang/Object;)I 14729 calls 14729 returns
+	Method getNode (ILjava/lang/Object;)Ljava/util/HashMap$Node; 10199 calls 10199 returns
+	Method get (Ljava/lang/Object;)Ljava/lang/Object; 5101 calls 5101 returns
+	Method containsKey (Ljava/lang/Object;)Z 4831 calls 4831 returns
+	Method putVal (ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; 4505 calls 4505 returns
+	Method put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 4498 calls 4498 returns
+	Method afterNodeInsertion (Z)V 3831 calls 3831 returns
+	Method newNode (ILjava/lang/Object;Ljava/lang/Object;Ljava/util/HashMap$Node;)Ljava/util/HashMap$Node; 3831 calls 3831 returns
+	Method <init> ()V 714 calls 714 returns
+	Method afterNodeAccess (Ljava/util/HashMap$Node;)V 475 calls 475 returns
+	Method resize ()[Ljava/util/HashMap$Node; 469 calls 469 returns
+	Method keySet ()Ljava/util/Set; 260 calls 260 returns
+	Method entrySet ()Ljava/util/Set; 124 calls 124 returns
+	Method size ()I 97 calls 97 returns
+	Method tableSizeFor (I)I 69 calls 69 returns
+	Method <init> (IF)V 67 calls 67 returns
+	Method <init> (I)V 63 calls 63 returns
+	Method values ()Ljava/util/Collection; 25 calls 25 returns
+	Method removeNode (ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/util/HashMap$Node; 25 calls 25 returns
+	Method remove (Ljava/lang/Object;)Ljava/lang/Object; 25 calls 25 returns
+	Method putMapEntries (Ljava/util/Map;Z)V 6 calls 6 returns
+	Method isEmpty ()Z 5 calls 5 returns
+	Method clear ()V 4 calls 4 returns
+	Method <init> (Ljava/util/Map;)V 3 calls 3 returns
+Class java/util/ArrayList 38445 calls
+	Method size ()I 9159 calls 9159 returns
+	Method rangeCheck (I)V 7652 calls 7652 returns
+	Method elementData (I)Ljava/lang/Object; 7652 calls 7652 returns
+	Method get (I)Ljava/lang/Object; 7648 calls 7648 returns
+	Method access$000 (Ljava/util/ArrayList;)I 1477 calls 1477 returns
+	Method ensureExplicitCapacity (I)V 997 calls 997 returns
+	Method ensureCapacityInternal (I)V 997 calls 997 returns
+	Method calculateCapacity ([Ljava/lang/Object;I)I 997 calls 997 returns
+	Method add (Ljava/lang/Object;)Z 994 calls 994 returns
+	Method <init> ()V 243 calls 243 returns
+	Method grow (I)V 238 calls 238 returns
+	Method iterator ()Ljava/util/Iterator; 162 calls 162 returns
+	Method <init> (I)V 160 calls 160 returns
+	Method toArray ([Ljava/lang/Object;)[Ljava/lang/Object; 48 calls 48 returns
+	Method isEmpty ()Z 5 calls 5 returns
+	Method clear ()V 4 calls 4 returns
+	Method remove (I)Ljava/lang/Object; 4 calls 4 returns
+	Method <init> (Ljava/util/Collection;)V 4 calls 4 returns
+	Method addAll (Ljava/util/Collection;)Z 3 calls 3 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class java/lang/StringBuilder 36535 calls
+	Method append (C)Ljava/lang/StringBuilder; 18620 calls 18620 returns
+	Method append (Ljava/lang/String;)Ljava/lang/StringBuilder; 9605 calls 9605 returns
+	Method toString ()Ljava/lang/String; 3980 calls 3980 returns
+	Method <init> ()V 3703 calls 3703 returns
+	Method length ()I 242 calls 242 returns
+	Method <init> (Ljava/lang/String;)V 143 calls 143 returns
+	Method <init> (I)V 143 calls 143 returns
+	Method append (I)Ljava/lang/StringBuilder; 55 calls 55 returns
+	Method append (Ljava/lang/Object;)Ljava/lang/StringBuilder; 35 calls 35 returns
+	Method getChars (II[CI)V 3 calls 3 returns
+	Method insert (ILjava/lang/String;)Ljava/lang/StringBuilder; 3 calls 3 returns
+	Method append (J)Ljava/lang/StringBuilder; 3 calls 3 returns
+Class java/lang/reflect/Method 35338 calls
+	Method getDeclaringClass ()Ljava/lang/Class; 11630 calls 11630 returns
+	Method getName ()Ljava/lang/String; 8588 calls 8588 returns
+	Method equals (Ljava/lang/Object;)Z 4284 calls 4284 returns
+	Method getReturnType ()Ljava/lang/Class; 2815 calls 2815 returns
+	Method getModifiers ()I 1648 calls 1648 returns
+	Method getGenericSignature ()Ljava/lang/String; 914 calls 914 returns
+	Method isDefault ()Z 827 calls 827 returns
+	Method getParameterTypes ()[Ljava/lang/Class; 791 calls 791 returns
+	Method copy ()Ljava/lang/reflect/Method; 521 calls 521 returns
+	Method <init> (Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;IILjava/lang/String;[B[B[B)V 521 calls 521 returns
+	Method hasGenericInformation ()Z 469 calls 469 returns
+	Method getGenericParameterTypes ()[Ljava/lang/reflect/Type; 332 calls 332 returns
+	Method getGenericReturnType ()Ljava/lang/reflect/Type; 305 calls 305 returns
+	Method invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; 225 calls 225 returns
+	Method getExceptionTypes ()[Ljava/lang/Class; 174 calls 174 returns
+	Method getGenericInfo ()Lsun/reflect/generics/repository/MethodRepository; 149 calls 149 returns
+	Method setMethodAccessor (Lsun/reflect/MethodAccessor;)V 138 calls 138 returns
+	Method specificToGenericStringHeader (Ljava/lang/StringBuilder;)V 137 calls 137 returns
+	Method toGenericString ()Ljava/lang/String; 137 calls 137 returns
+	Method getGenericExceptionTypes ()[Ljava/lang/reflect/Type; 137 calls 137 returns
+	Method getTypeParameters ()[Ljava/lang/reflect/TypeVariable; 137 calls 137 returns
+	Method getRoot ()Ljava/lang/reflect/Executable; 82 calls 82 returns
+	Method getGenericInfo ()Lsun/reflect/generics/repository/ConstructorRepository; 73 calls 73 returns
+	Method getMethodAccessor ()Lsun/reflect/MethodAccessor; 69 calls 69 returns
+	Method acquireMethodAccessor ()Lsun/reflect/MethodAccessor; 69 calls 69 returns
+	Method getAnnotation (Ljava/lang/Class;)Ljava/lang/annotation/Annotation; 67 calls 67 returns
+	Method isVarArgs ()Z 51 calls 51 returns
+	Method getAnnotationBytes ()[B 41 calls 41 returns
+	Method getFactory ()Lsun/reflect/generics/factory/GenericsFactory; 3 calls 3 returns
+	Method getDefaultValue ()Ljava/lang/Object; 2 calls 2 returns
+	Method isSynthetic ()Z 2 calls 2 returns
+Class java/lang/Character 30912 calls
+	Method toLowerCase (I)I 4879 calls 4879 returns
+	Method toLowerCase (C)C 4298 calls 4298 returns
+	Method toUpperCaseEx (I)I 3254 calls 3254 returns
+	Method toUpperCase (I)I 2326 calls 2326 returns
+	Method toUpperCase (C)C 2326 calls 2326 returns
+	Method getType (I)I 2042 calls 2042 returns
+	Method isUpperCase (I)Z 1986 calls 1986 returns
+	Method isUpperCase (C)Z 1986 calls 1986 returns
+	Method isWhitespace (I)Z 1041 calls 1041 returns
+	Method isWhitespace (C)Z 1041 calls 1041 returns
+	Method hashCode (C)I 1007 calls 1007 returns
+	Method hashCode ()I 1007 calls 1007 returns
+	Method valueOf (C)Ljava/lang/Character; 1007 calls 1007 returns
+	Method charCount (I)I 636 calls 636 returns
+	Method isHighSurrogate (C)Z 612 calls 612 returns
+	Method codePointAt (Ljava/lang/CharSequence;I)I 548 calls 548 returns
+	Method isSupplementaryCodePoint (I)Z 500 calls 500 returns
+	Method <init> (C)V 130 calls 130 returns
+	Method codePointAtImpl ([CII)I 64 calls 64 returns
+	Method isSurrogate (C)Z 64 calls 64 returns
+	Method isLetterOrDigit (I)Z 42 calls 42 returns
+	Method isLetterOrDigit (C)Z 42 calls 42 returns
+	Method digit (II)I 23 calls 23 returns
+	Method digit (CI)I 23 calls 23 returns
+	Method isLetter (I)Z 14 calls 14 returns
+	Method isLetter (C)Z 14 calls 14 returns
+Class java/lang/CharacterDataLatin1 30906 calls
+	Method getProperties (I)I 13565 calls 13565 returns
+	Method toLowerCase (I)I 4879 calls 4879 returns
+	Method toUpperCaseEx (I)I 3254 calls 3254 returns
+	Method toUpperCase (I)I 2326 calls 2326 returns
+	Method getType (I)I 2042 calls 2042 returns
+	Method isOtherUppercase (I)Z 1887 calls 1887 returns
+	Method getPropertiesEx (I)I 1887 calls 1887 returns
+	Method isWhitespace (I)Z 1041 calls 1041 returns
+	Method digit (II)I 23 calls 23 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+Class java/util/Arrays 29756 calls
+	Method copyOfRange ([CII)[C 12711 calls 12711 returns
+	Method copyOf ([BI)[B 8762 calls 8762 returns
+	Method copyOf ([CI)[C 7571 calls 7571 returns
+	Method copyOf ([Ljava/lang/Object;ILjava/lang/Class;)[Ljava/lang/Object; 342 calls 342 returns
+	Method copyOf ([Ljava/lang/Object;I)[Ljava/lang/Object; 337 calls 337 returns
+	Method hashCode ([Ljava/lang/Object;)I 16 calls 16 returns
+	Method asList ([Ljava/lang/Object;)Ljava/util/List; 6 calls 6 returns
+	Method fill ([CIIC)V 2 calls 2 returns
+	Method rangeCheck (III)V 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method copyOfRange ([III)[I 1 calls 1 returns
+	Method copyOf ([JI)[J 1 calls 1 returns
+	Method copyOf ([II)[I 1 calls 1 returns
+	Method fill ([Ljava/lang/Object;Ljava/lang/Object;)V 1 calls 1 returns
+	Method binarySearch0 ([Ljava/lang/Object;IILjava/lang/Object;)I 1 calls 1 returns
+	Method binarySearch ([Ljava/lang/Object;Ljava/lang/Object;)I 1 calls 1 returns
+Class java/net/URL 29547 calls
+	Method getProtocol ()Ljava/lang/String; 4206 calls 4206 returns
+	Method getHost ()Ljava/lang/String; 3903 calls 3903 returns
+	Method getPath ()Ljava/lang/String; 2719 calls 2719 returns
+	Method getAuthority ()Ljava/lang/String; 2695 calls 2695 returns
+	Method getRef ()Ljava/lang/String; 2613 calls 2613 returns
+	Method getFile ()Ljava/lang/String; 2271 calls 2271 returns
+	Method getQuery ()Ljava/lang/String; 1955 calls 1955 returns
+	Method getPort ()I 1911 calls 1911 returns
+	Method set (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V 1486 calls 1486 returns
+	Method <init> (Ljava/net/URL;Ljava/lang/String;Ljava/net/URLStreamHandler;)V 1486 calls 1486 returns
+	Method <init> (Ljava/net/URL;Ljava/lang/String;)V 1486 calls 1486 returns
+	Method getUserInfo ()Ljava/lang/String; 1215 calls 1215 returns
+	Method toExternalForm ()Ljava/lang/String; 370 calls 370 returns
+	Method toString ()Ljava/lang/String; 370 calls 370 returns
+	Method hashCode ()I 347 calls 347 returns
+	Method equals (Ljava/lang/Object;)Z 323 calls 323 returns
+	Method <init> (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/net/URLStreamHandler;)V 58 calls 58 returns
+	Method getDefaultPort ()I 38 calls 38 returns
+	Method getURLStreamHandler (Ljava/lang/String;)Ljava/net/URLStreamHandler; 23 calls 23 returns
+	Method <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V 23 calls 23 returns
+	Method <init> (Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V 23 calls 23 returns
+	Method isValidProtocol (Ljava/lang/String;)Z 14 calls 14 returns
+	Method openConnection ()Ljava/net/URLConnection; 12 calls 12 returns
+End Class Stats
+
+Results :
+
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.429 s
+[INFO] Finished at: 2019-07-06T16:44:02-07:00
+[INFO] Final Memory: 11M/303M
+[INFO] ------------------------------------------------------------------------

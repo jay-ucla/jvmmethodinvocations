@@ -1,0 +1,262 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for vanilla.java:chronicle:jar:1.2-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 45, column 11
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-source-plugin is missing. @ line 70, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building chronicle 1.2-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ chronicle ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jay/openjdktest/sample-projects/Java-Chronicle/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ chronicle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ chronicle ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/jay/openjdktest/sample-projects/Java-Chronicle/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ chronicle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ chronicle ---
+[INFO] Surefire report directory: /home/jay/openjdktest/sample-projects/Java-Chronicle/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running vanilla.java.chronicle.impl.ByteBufferExcerptTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 sec - in vanilla.java.chronicle.impl.ByteBufferExcerptTest
+Running vanilla.java.chronicle.impl.IntIndexedChronicleTest
+/tmp/deleteme.iict created.
+/tmp/deleteme.iict, size=1024
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.476 sec - in vanilla.java.chronicle.impl.IntIndexedChronicleTest
+Running vanilla.java.chronicle.impl.IndexedChronicleTest
+temp/chroncle-bool-test created.
+/tmp/deleteme.ict created.
+/tmp/deleteme.ict, size=512
+/tmp/deleteme.ict, size=512
+/tmp/deleteme.ict, size=1024
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.543 sec - in vanilla.java.chronicle.impl.IndexedChronicleTest
+VMStart
+VMInit main
+ThreadStart Signal Dispatcher
+ThreadStart main
+ThreadStart Thread-0
+ThreadEnd main
+VMDeath
+Begin Class Stats
+Class java/nio/DirectByteBuffer 276740 calls
+	Method ix (I)J 92311 calls 92311 returns
+	Method getLong (I)J 43014 calls 43014 returns
+	Method getLong (J)J 43014 calls 43014 returns
+	Method putLong (IJ)Ljava/nio/ByteBuffer; 35399 calls 35399 returns
+	Method putLong (JJ)Ljava/nio/ByteBuffer; 35399 calls 35399 returns
+	Method getInt (I)I 7170 calls 7170 returns
+	Method getInt (J)I 7170 calls 7170 returns
+	Method address ()J 4102 calls 4102 returns
+	Method put (IB)Ljava/nio/ByteBuffer; 2562 calls 2562 returns
+	Method putInt (II)Ljava/nio/ByteBuffer; 2116 calls 2116 returns
+	Method putInt (JI)Ljava/nio/ByteBuffer; 2116 calls 2116 returns
+	Method get (I)B 2050 calls 2050 returns
+	Method <init> (IJLjava/io/FileDescriptor;Ljava/lang/Runnable;)V 152 calls 152 returns
+	Method cleaner ()Lsun/misc/Cleaner; 152 calls 152 returns
+	Method asLongBuffer ()Ljava/nio/LongBuffer; 6 calls 6 returns
+	Method <init> (JI)V 6 calls 6 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class java/lang/String 174606 calls
+	Method charAt (I)C 66827 calls 66827 returns
+	Method length ()I 22823 calls 22823 returns
+	Method equals (Ljava/lang/Object;)Z 21786 calls 21786 returns
+	Method <init> ([CII)V 7002 calls 7002 returns
+	Method hashCode ()I 6152 calls 6152 returns
+	Method getChars (II[CI)V 5594 calls 5594 returns
+	Method indexOf (II)I 4711 calls 4711 returns
+	Method startsWith (Ljava/lang/String;I)Z 4553 calls 4553 returns
+	Method toCharArray ()[C 3942 calls 3942 returns
+	Method substring (II)Ljava/lang/String; 3866 calls 3866 returns
+	Method indexOf (I)I 3158 calls 3158 returns
+	Method endsWith (Ljava/lang/String;)Z 2345 calls 2345 returns
+	Method startsWith (Ljava/lang/String;)Z 2208 calls 2208 returns
+	Method lastIndexOf (II)I 2078 calls 2078 returns
+	Method <init> ([CZ)V 2002 calls 2002 returns
+	Method lastIndexOf (I)I 1899 calls 1899 returns
+	Method indexOf ([CII[CIII)I 1778 calls 1778 returns
+	Method indexOf (Ljava/lang/String;I)I 1778 calls 1778 returns
+	Method replace (CC)Ljava/lang/String; 1648 calls 1648 returns
+	Method indexOf (Ljava/lang/String;)I 1189 calls 1189 returns
+	Method equalsIgnoreCase (Ljava/lang/String;)Z 948 calls 948 returns
+	Method regionMatches (ZILjava/lang/String;II)Z 939 calls 939 returns
+	Method concat (Ljava/lang/String;)Ljava/lang/String; 637 calls 637 returns
+	Method getChars ([CI)V 637 calls 637 returns
+	Method substring (I)Ljava/lang/String; 623 calls 623 returns
+	Method getBytes (Ljava/lang/String;)[B 500 calls 500 returns
+	Method lastIndexOf ([CII[CIII)I 407 calls 407 returns
+	Method lastIndexOf (Ljava/lang/String;I)I 407 calls 407 returns
+	Method trim ()Ljava/lang/String; 404 calls 404 returns
+	Method lastIndexOf (Ljava/lang/String;)I 387 calls 387 returns
+	Method checkBounds ([BII)V 233 calls 233 returns
+	Method toString ()Ljava/lang/String; 172 calls 172 returns
+	Method <init> ([BIILjava/lang/String;)V 162 calls 162 returns
+	Method toLowerCase (Ljava/util/Locale;)Ljava/lang/String; 144 calls 144 returns
+	Method toLowerCase ()Ljava/lang/String; 143 calls 143 returns
+	Method <init> ([BLjava/lang/String;)V 94 calls 94 returns
+	Method toUpperCase (Ljava/util/Locale;)Ljava/lang/String; 80 calls 80 returns
+	Method subSequence (II)Ljava/lang/CharSequence; 80 calls 80 returns
+	Method codePointAt (I)I 76 calls 76 returns
+	Method <init> ([BIII)V 68 calls 68 returns
+	Method valueOf (Ljava/lang/Object;)Ljava/lang/String; 31 calls 31 returns
+	Method compareTo (Ljava/lang/String;)I 26 calls 26 returns
+	Method format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; 16 calls 16 returns
+	Method compareTo (Ljava/lang/Object;)I 15 calls 15 returns
+	Method <init> ([C)V 13 calls 13 returns
+	Method getBytes ()[B 10 calls 10 returns
+	Method contains (Ljava/lang/CharSequence;)Z 4 calls 4 returns
+	Method split (Ljava/lang/String;)[Ljava/lang/String; 3 calls 3 returns
+	Method split (Ljava/lang/String;I)[Ljava/lang/String; 3 calls 3 returns
+	Method <init> ([BII)V 3 calls 3 returns
+	Method regionMatches (ILjava/lang/String;II)Z 1 calls 1 returns
+	Method isEmpty ()Z 1 calls 1 returns
+Class java/util/ArrayList 142655 calls
+	Method size ()I 33800 calls 33800 returns
+	Method rangeCheck (I)V 32579 calls 32579 returns
+	Method elementData (I)Ljava/lang/Object; 32579 calls 32579 returns
+	Method get (I)Ljava/lang/Object; 32418 calls 32418 returns
+	Method access$000 (Ljava/util/ArrayList;)I 2847 calls 2847 returns
+	Method add (Ljava/lang/Object;)Z 1765 calls 1765 returns
+	Method ensureExplicitCapacity (I)V 1765 calls 1765 returns
+	Method ensureCapacityInternal (I)V 1765 calls 1765 returns
+	Method calculateCapacity ([Ljava/lang/Object;I)I 1765 calls 1765 returns
+	Method iterator ()Ljava/util/Iterator; 401 calls 401 returns
+	Method <init> ()V 272 calls 272 returns
+	Method grow (I)V 247 calls 247 returns
+	Method set (ILjava/lang/Object;)Ljava/lang/Object; 158 calls 158 returns
+	Method <init> (I)V 82 calls 82 returns
+	Method isEmpty ()Z 77 calls 77 returns
+	Method clear ()V 74 calls 74 returns
+	Method toArray ([Ljava/lang/Object;)[Ljava/lang/Object; 29 calls 29 returns
+	Method listIterator ()Ljava/util/ListIterator; 8 calls 8 returns
+	Method <init> (Ljava/util/Collection;)V 8 calls 8 returns
+	Method subListRangeCheck (III)V 4 calls 4 returns
+	Method subList (II)Ljava/util/List; 4 calls 4 returns
+	Method remove (I)Ljava/lang/Object; 3 calls 3 returns
+	Method toArray ()[Ljava/lang/Object; 3 calls 3 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method remove (Ljava/lang/Object;)Z 1 calls 1 returns
+Class java/nio/Buffer 94983 calls
+	Method checkIndex (II)I 87703 calls 87703 returns
+	Method checkIndex (I)I 4841 calls 4841 returns
+	Method position (I)Ljava/nio/Buffer; 471 calls 471 returns
+	Method position ()I 402 calls 402 returns
+	Method capacity ()I 312 calls 312 returns
+	Method limit (I)Ljava/nio/Buffer; 283 calls 283 returns
+	Method limit ()I 278 calls 278 returns
+	Method <init> (IIII)V 275 calls 275 returns
+	Method remaining ()I 100 calls 100 returns
+	Method hasRemaining ()Z 96 calls 96 returns
+	Method flip ()Ljava/nio/Buffer; 92 calls 92 returns
+	Method clear ()Ljava/nio/Buffer; 80 calls 80 returns
+	Method nextGetIndex (I)I 37 calls 37 returns
+	Method discardMark ()V 8 calls 8 returns
+	Method nextGetIndex ()I 5 calls 5 returns
+Class vanilla/java/chronicle/impl/ByteBufferExcerpt 85703 calls
+	Method writeLong (J)V 32768 calls 32768 returns
+	Method readLong ()J 32768 calls 32768 returns
+	Method write (I)V 11440 calls 11440 returns
+	Method index0 (JJJ)V 4614 calls 4614 returns
+	Method readLong (I)J 2053 calls 2053 returns
+	Method readByte ()B 2051 calls 2051 returns
+	Method <init> (Lvanilla/java/chronicle/impl/DirectChronicle;)V 8 calls 8 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class vanilla/java/chronicle/impl/IndexedChronicle 77171 calls
+	Method acquireIndexBuffer (J)Ljava/nio/ByteBuffer; 20114 calls 20114 returns
+	Method positionInBuffer (J)I 17412 calls 17412 returns
+	Method indexBitSize ()I 10833 calls 10833 returns
+	Method acquireDataBuffer (J)Ljava/nio/ByteBuffer; 8706 calls 8706 returns
+	Method getIndexData (J)J 8197 calls 8197 returns
+	Method incrSize ()V 4609 calls 4609 returns
+	Method startExcerpt (I)J 4609 calls 4609 returns
+	Method setIndexData (JJ)V 2631 calls 2631 returns
+	Method clearAll (Ljava/nio/channels/FileChannel;Ljava/util/List;)V 14 calls 14 returns
+	Method close ()V 7 calls 7 returns
+	Method extractName (Ljava/lang/String;)Ljava/lang/String; 7 calls 7 returns
+	Method <init> (Ljava/lang/String;ILjava/nio/ByteOrder;)V 7 calls 7 returns
+	Method <init> (Ljava/lang/String;I)V 7 calls 7 returns
+	Method clear ()V 6 calls 6 returns
+	Method createExcerpt ()Lvanilla/java/chronicle/Excerpt; 6 calls 6 returns
+	Method useUnsafe (Z)V 5 calls 5 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class vanilla/java/chronicle/impl/UnsafeExcerpt 75779 calls
+	Method writeLong (J)V 32768 calls 32768 returns
+	Method readLong ()J 32768 calls 32768 returns
+	Method index0 (JJJ)V 4096 calls 4096 returns
+	Method write (I)V 2048 calls 2048 returns
+	Method readLong (I)J 2048 calls 2048 returns
+	Method readByte ()B 2048 calls 2048 returns
+	Method <init> (Lvanilla/java/chronicle/impl/DirectChronicle;)V 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class vanilla/java/chronicle/impl/AbstractExcerpt 40339 calls
+	Method writeByte (I)V 9390 calls 9390 returns
+	Method finish ()V 8706 calls 8706 returns
+	Method writeMemoryBarrier ()V 4609 calls 4609 returns
+	Method startExcerpt (I)V 4609 calls 4609 returns
+	Method readMemoryBarrier ()Z 4105 calls 4105 returns
+	Method index (J)Z 4105 calls 4105 returns
+	Method asDouble (JIZI)D 2874 calls 2874 returns
+	Method append (C)Lvanilla/java/chronicle/ByteStringAppender; 633 calls 633 returns
+	Method power10 (J)J 328 calls 328 returns
+	Method appendTime (J)Lvanilla/java/chronicle/ByteStringAppender; 233 calls 233 returns
+	Method appendDouble0 (JI)V 200 calls 200 returns
+	Method append (DI)Lvanilla/java/chronicle/ByteStringAppender; 200 calls 200 returns
+	Method append (D)Lvanilla/java/chronicle/ByteStringAppender; 200 calls 200 returns
+	Method appendLong0 (J)V 128 calls 128 returns
+	Method <init> (Lvanilla/java/chronicle/Chronicle;)V 10 calls 10 returns
+	Method position ()I 3 calls 3 returns
+	Method writeBoolean (Z)V 2 calls 2 returns
+	Method readBoolean ()Z 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method readUnsignedByte ()I 1 calls 1 returns
+Class java/lang/AbstractStringBuilder 37054 calls
+	Method ensureCapacityInternal (I)V 15713 calls 15713 returns
+	Method append (C)Ljava/lang/AbstractStringBuilder; 9904 calls 9904 returns
+	Method append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 5514 calls 5514 returns
+	Method newCapacity (I)I 3014 calls 3014 returns
+	Method <init> (I)V 2546 calls 2546 returns
+	Method append (J)Ljava/lang/AbstractStringBuilder; 240 calls 240 returns
+	Method append (Ljava/lang/CharSequence;)Ljava/lang/AbstractStringBuilder; 64 calls 64 returns
+	Method append (I)Ljava/lang/AbstractStringBuilder; 51 calls 51 returns
+	Method setLength (I)V 4 calls 4 returns
+	Method append ([CII)Ljava/lang/AbstractStringBuilder; 2 calls 2 returns
+	Method getChars (II[CI)V 1 calls 1 returns
+	Method length ()I 1 calls 1 returns
+Class java/lang/Math 27906 calls
+	Method min (II)I 16745 calls 16745 returns
+	Method max (II)I 5064 calls 5064 returns
+	Method powerOfTwoD (I)D 2876 calls 2876 returns
+	Method scalb (DI)D 2874 calls 2874 returns
+	Method max (JJ)J 200 calls 200 returns
+	Method floorDiv (JJ)J 59 calls 59 returns
+	Method floorMod (JJ)J 58 calls 58 returns
+	Method min (FF)F 29 calls 29 returns
+	Method <clinit> ()V 1 calls 1 returns
+End Class Stats
+
+Results :
+
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.257 s
+[INFO] Finished at: 2019-07-06T16:44:08-07:00
+[INFO] Final Memory: 11M/303M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,5 @@
+jvmtiagentraw.so
+jvmtiagentmd.so
+jvmtiagentmdsig.so
+jvmtiagentclass.so
+jvmtiagent.so

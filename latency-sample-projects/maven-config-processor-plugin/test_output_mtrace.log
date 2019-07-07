@@ -1,0 +1,411 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Config Processor Plugin 2.3-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ maven-config-processor-plugin ---
+[INFO] 
+[INFO] --- maven-license-plugin:1.4.0:format (default) @ maven-config-processor-plugin ---
+[INFO] Updating license headers...
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ maven-config-processor-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jay/openjdktest/sample-projects/maven-config-processor-plugin/src/main/resources
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ maven-config-processor-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-plugin-plugin:3.3:descriptor (default-descriptor) @ maven-config-processor-plugin ---
+[ERROR] 
+
+Artifact Ids of the format maven-___-plugin are reserved for 
+plugins in the Group Id org.apache.maven.plugins
+Please change your artifactId to the format ___-maven-plugin
+In the future this error will break the build.
+
+
+[INFO] Using 'UTF-8' encoding to read mojo metadata.
+[INFO] Applying mojo extractor for language: java
+[WARNING] com.google.code.configprocessor.ConfigProcessorMojo#failOnMissingXpath:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.google.code.configprocessor.ConfigProcessorMojo#localRepository:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.google.code.configprocessor.ConfigProcessorMojo#mavenProject:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.google.code.configprocessor.ConfigProcessorMojo#mavenSession:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.google.code.configprocessor.ConfigProcessorMojo#mojoExecution:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.google.code.configprocessor.ConfigProcessorMojo#remoteRepositories:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.google.code.configprocessor.ConfigProcessorMojo#skip:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[WARNING] com.google.code.configprocessor.ConfigProcessorMojo#specificProperties:
+[WARNING]   The syntax
+[WARNING]     @parameter expression="${property}"
+[WARNING]   is deprecated, please use
+[WARNING]     @parameter property="property"
+[WARNING]   instead.
+[INFO] Mojo extractor for language: java found 1 mojo descriptors.
+[INFO] Applying mojo extractor for language: bsh
+[INFO] Mojo extractor for language: bsh found 0 mojo descriptors.
+[INFO] Applying mojo extractor for language: java-annotations
+[INFO] Mojo extractor for language: java-annotations found 0 mojo descriptors.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ maven-config-processor-plugin ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ maven-config-processor-plugin ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ maven-config-processor-plugin ---
+[INFO] Surefire report directory: /home/jay/openjdktest/sample-projects/maven-config-processor-plugin/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.google.code.configprocessor.processing.properties.PropertiesActionProcessorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 sec
+Running com.google.code.configprocessor.processing.properties.PropertiesUncommentActionProcessingAdvisorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec
+Running com.google.code.configprocessor.processing.properties.model.PropertyMappingTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Running com.google.code.configprocessor.processing.properties.PropertiesRemoveActionProcessingAdvisorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running com.google.code.configprocessor.processing.properties.PropertiesAddActionProcessingAdvisorTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running com.google.code.configprocessor.processing.properties.PropertiesModifyActionProcessingAdvisorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 sec
+Running com.google.code.configprocessor.processing.properties.PropertiesCommentActionProcessingAdvisorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 sec
+Running com.google.code.configprocessor.processing.UncommentActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec
+Running com.google.code.configprocessor.processing.ModifyActionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec
+Running com.google.code.configprocessor.processing.RemoveActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.google.code.configprocessor.processing.xml.XmlModifyActionProcessingAdvisorTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 sec
+Running com.google.code.configprocessor.processing.xml.XmlRemoveActionProcessingAdvisorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec
+Running com.google.code.configprocessor.processing.xml.XmlAddActionProcessingAdvisorTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec
+Running com.google.code.configprocessor.processing.AddActionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 sec
+Running com.google.code.configprocessor.processing.CommentActionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
+Running com.google.code.configprocessor.parsing.ProcessingConfigurationParserTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.327 sec
+Running com.google.code.configprocessor.ConfigProcessorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec
+Running com.google.code.configprocessor.util.PropertiesUtilsTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+VMStart
+VMInit main
+ThreadStart Signal Dispatcher
+ThreadStart main
+ThreadEnd main
+VMDeath
+Begin Class Stats
+Class java/lang/String 1022869 calls
+	Method charAt (I)C 455380 calls 455380 returns
+	Method length ()I 107835 calls 107835 returns
+	Method equals (Ljava/lang/Object;)Z 75510 calls 75510 returns
+	Method toCharArray ()[C 50198 calls 50198 returns
+	Method getChars (II[CI)V 35086 calls 35086 returns
+	Method startsWith (Ljava/lang/String;I)Z 34406 calls 34406 returns
+	Method hashCode ()I 31728 calls 31728 returns
+	Method <init> ([CII)V 30389 calls 30389 returns
+	Method indexOf (II)I 26101 calls 26101 returns
+	Method startsWith (Ljava/lang/String;)Z 22971 calls 22971 returns
+	Method indexOf (I)I 20945 calls 20945 returns
+	Method substring (II)Ljava/lang/String; 18543 calls 18543 returns
+	Method endsWith (Ljava/lang/String;)Z 11435 calls 11435 returns
+	Method <init> ([CZ)V 10869 calls 10869 returns
+	Method lastIndexOf (II)I 10371 calls 10371 returns
+	Method indexOf ([CII[CIII)I 9792 calls 9792 returns
+	Method indexOf (Ljava/lang/String;I)I 9792 calls 9792 returns
+	Method lastIndexOf (I)I 9595 calls 9595 returns
+	Method replace (CC)Ljava/lang/String; 8642 calls 8642 returns
+	Method indexOf (Ljava/lang/String;)I 6326 calls 6326 returns
+	Method regionMatches (ZILjava/lang/String;II)Z 5270 calls 5270 returns
+	Method equalsIgnoreCase (Ljava/lang/String;)Z 3974 calls 3974 returns
+	Method toString ()Ljava/lang/String; 3582 calls 3582 returns
+	Method substring (I)Ljava/lang/String; 3537 calls 3537 returns
+	Method getChars ([CI)V 2446 calls 2446 returns
+	Method concat (Ljava/lang/String;)Ljava/lang/String; 2444 calls 2444 returns
+	Method getBytes (Ljava/lang/String;)[B 2411 calls 2411 returns
+	Method trim ()Ljava/lang/String; 1968 calls 1968 returns
+	Method codePointAt (I)I 1768 calls 1768 returns
+	Method subSequence (II)Ljava/lang/CharSequence; 1713 calls 1713 returns
+	Method lastIndexOf ([CII[CIII)I 1378 calls 1378 returns
+	Method lastIndexOf (Ljava/lang/String;I)I 1378 calls 1378 returns
+	Method lastIndexOf (Ljava/lang/String;)I 1378 calls 1378 returns
+	Method checkBounds ([BII)V 658 calls 658 returns
+	Method toLowerCase ()Ljava/lang/String; 424 calls 424 returns
+	Method toLowerCase (Ljava/util/Locale;)Ljava/lang/String; 424 calls 424 returns
+	Method valueOf (Ljava/lang/Object;)Ljava/lang/String; 409 calls 409 returns
+	Method format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; 390 calls 390 returns
+	Method <init> ([BIILjava/lang/String;)V 388 calls 388 returns
+	Method <init> ([C)V 237 calls 237 returns
+	Method <init> ([BIII)V 218 calls 218 returns
+	Method <init> ([BLjava/lang/String;)V 160 calls 160 returns
+	Method toUpperCase (Ljava/util/Locale;)Ljava/lang/String; 127 calls 127 returns
+	Method contains (Ljava/lang/CharSequence;)Z 72 calls 72 returns
+	Method <init> ([B)V 52 calls 52 returns
+	Method <init> ([BII)V 52 calls 52 returns
+	Method valueOf (C)Ljava/lang/String; 39 calls 39 returns
+	Method valueOf ([C)Ljava/lang/String; 37 calls 37 returns
+	Method compareTo (Ljava/lang/String;)I 16 calls 16 returns
+	Method split (Ljava/lang/String;)[Ljava/lang/String; 2 calls 2 returns
+	Method split (Ljava/lang/String;I)[Ljava/lang/String; 2 calls 2 returns
+	Method <init> (Ljava/lang/String;)V 1 calls 1 returns
+Class java/util/ArrayList 260365 calls
+	Method size ()I 52828 calls 52828 returns
+	Method rangeCheck (I)V 51392 calls 51392 returns
+	Method elementData (I)Ljava/lang/Object; 51392 calls 51392 returns
+	Method get (I)Ljava/lang/Object; 51316 calls 51316 returns
+	Method access$000 (Ljava/util/ArrayList;)I 9019 calls 9019 returns
+	Method ensureExplicitCapacity (I)V 7025 calls 7025 returns
+	Method ensureCapacityInternal (I)V 7025 calls 7025 returns
+	Method calculateCapacity ([Ljava/lang/Object;I)I 7025 calls 7025 returns
+	Method add (Ljava/lang/Object;)Z 6776 calls 6776 returns
+	Method indexOf (Ljava/lang/Object;)I 4195 calls 4195 returns
+	Method contains (Ljava/lang/Object;)Z 4145 calls 4145 returns
+	Method <init> ()V 2429 calls 2429 returns
+	Method grow (I)V 1922 calls 1922 returns
+	Method iterator ()Ljava/util/Iterator; 1616 calls 1616 returns
+	Method toArray ([Ljava/lang/Object;)[Ljava/lang/Object; 741 calls 741 returns
+	Method isEmpty ()Z 428 calls 428 returns
+	Method addAll (Ljava/util/Collection;)Z 225 calls 225 returns
+	Method toArray ()[Ljava/lang/Object; 213 calls 213 returns
+	Method <init> (I)V 196 calls 196 returns
+	Method lastIndexOf (Ljava/lang/Object;)I 178 calls 178 returns
+	Method clear ()V 103 calls 103 returns
+	Method remove (I)Ljava/lang/Object; 60 calls 60 returns
+	Method sort (Ljava/util/Comparator;)V 36 calls 36 returns
+	Method rangeCheckForAdd (I)V 24 calls 24 returns
+	Method add (ILjava/lang/Object;)V 24 calls 24 returns
+	Method set (ILjava/lang/Object;)Ljava/lang/Object; 16 calls 16 returns
+	Method listIterator ()Ljava/util/ListIterator; 4 calls 4 returns
+	Method remove (Ljava/lang/Object;)Z 4 calls 4 returns
+	Method fastRemove (I)V 3 calls 3 returns
+	Method <init> (Ljava/util/Collection;)V 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method subListRangeCheck (III)V 1 calls 1 returns
+	Method subList (II)Ljava/util/List; 1 calls 1 returns
+Class java/lang/AbstractStringBuilder 228029 calls
+	Method ensureCapacityInternal (I)V 95904 calls 95904 returns
+	Method append (C)Ljava/lang/AbstractStringBuilder; 60339 calls 60339 returns
+	Method append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 33633 calls 33633 returns
+	Method newCapacity (I)I 19467 calls 19467 returns
+	Method <init> (I)V 14895 calls 14895 returns
+	Method append (Ljava/lang/CharSequence;)Ljava/lang/AbstractStringBuilder; 1629 calls 1629 returns
+	Method append ([CII)Ljava/lang/AbstractStringBuilder; 1116 calls 1116 returns
+	Method append (I)Ljava/lang/AbstractStringBuilder; 515 calls 515 returns
+	Method append (Ljava/lang/CharSequence;II)Ljava/lang/AbstractStringBuilder; 151 calls 151 returns
+	Method length ()I 71 calls 71 returns
+	Method setLength (I)V 70 calls 70 returns
+	Method append (Ljava/lang/AbstractStringBuilder;)Ljava/lang/AbstractStringBuilder; 69 calls 69 returns
+	Method getChars (II[CI)V 69 calls 69 returns
+	Method appendNull ()Ljava/lang/AbstractStringBuilder; 57 calls 57 returns
+	Method append (Z)Ljava/lang/AbstractStringBuilder; 37 calls 37 returns
+	Method append (J)Ljava/lang/AbstractStringBuilder; 5 calls 5 returns
+	Method insert (ILjava/lang/String;)Ljava/lang/AbstractStringBuilder; 2 calls 2 returns
+Class java/lang/Character 144581 calls
+	Method isHighSurrogate (C)Z 33459 calls 33459 returns
+	Method charCount (I)I 32946 calls 32946 returns
+	Method codePointAt (Ljava/lang/CharSequence;I)I 31691 calls 31691 returns
+	Method toLowerCase (I)I 8424 calls 8424 returns
+	Method toLowerCase (C)C 8424 calls 8424 returns
+	Method toUpperCase (I)I 6535 calls 6535 returns
+	Method toUpperCase (C)C 6535 calls 6535 returns
+	Method toUpperCaseEx (I)I 3870 calls 3870 returns
+	Method isWhitespace (I)Z 2565 calls 2565 returns
+	Method isWhitespace (C)Z 2565 calls 2565 returns
+	Method codePointAtImpl ([CII)I 1768 calls 1768 returns
+	Method isJavaIdentifierPart (I)Z 1492 calls 1492 returns
+	Method getType (I)I 1272 calls 1272 returns
+	Method isUpperCase (I)Z 780 calls 780 returns
+	Method isUpperCase (C)Z 780 calls 780 returns
+	Method isSurrogate (C)Z 326 calls 326 returns
+	Method isLetterOrDigit (I)Z 255 calls 255 returns
+	Method isLetterOrDigit (C)Z 255 calls 255 returns
+	Method isLetter (I)Z 174 calls 174 returns
+	Method isLetter (C)Z 174 calls 174 returns
+	Method <init> (C)V 129 calls 129 returns
+	Method isDigit (I)Z 63 calls 63 returns
+	Method isDigit (C)Z 63 calls 63 returns
+	Method isJavaIdentifierStart (I)Z 31 calls 31 returns
+	Method digit (II)I 2 calls 2 returns
+	Method digit (CI)I 2 calls 2 returns
+	Method valueOf (C)Ljava/lang/Character; 1 calls 1 returns
+Class java/nio/charset/CharsetEncoder 141869 calls
+	Method maxBytesPerChar ()F 48198 calls 48198 returns
+	Method implReset ()V 45787 calls 45787 returns
+	Method reset ()Ljava/nio/charset/CharsetEncoder; 45787 calls 45787 returns
+	Method encode (Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;Z)Ljava/nio/charset/CoderResult; 891 calls 891 returns
+	Method implOnUnmappableCharacter (Ljava/nio/charset/CodingErrorAction;)V 159 calls 159 returns
+	Method onUnmappableCharacter (Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetEncoder; 159 calls 159 returns
+	Method implOnMalformedInput (Ljava/nio/charset/CodingErrorAction;)V 159 calls 159 returns
+	Method onMalformedInput (Ljava/nio/charset/CodingErrorAction;)Ljava/nio/charset/CharsetEncoder; 159 calls 159 returns
+	Method replaceWith ([B)Ljava/nio/charset/CharsetEncoder; 159 calls 159 returns
+	Method <init> (Ljava/nio/charset/Charset;FF)V 159 calls 159 returns
+	Method <init> (Ljava/nio/charset/Charset;FF[B)V 159 calls 159 returns
+	Method charset ()Ljava/nio/charset/Charset; 92 calls 92 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class java/util/Arrays 112767 calls
+	Method copyOf ([BI)[B 50206 calls 50206 returns
+	Method copyOfRange ([CII)[C 33987 calls 33987 returns
+	Method copyOf ([CI)[C 22148 calls 22148 returns
+	Method copyOf ([Ljava/lang/Object;I)[Ljava/lang/Object; 2216 calls 2216 returns
+	Method copyOf ([Ljava/lang/Object;ILjava/lang/Class;)[Ljava/lang/Object; 2139 calls 2139 returns
+	Method rangeCheck (III)V 464 calls 464 returns
+	Method equals ([Ljava/lang/Object;[Ljava/lang/Object;)Z 446 calls 446 returns
+	Method fill ([BIIB)V 401 calls 401 returns
+	Method copyOfRange ([Ljava/lang/Object;IILjava/lang/Class;)[Ljava/lang/Object; 292 calls 292 returns
+	Method copyOfRange ([Ljava/lang/Object;II)[Ljava/lang/Object; 239 calls 239 returns
+	Method asList ([Ljava/lang/Object;)Ljava/util/List; 138 calls 138 returns
+	Method sort ([Ljava/lang/Object;IILjava/util/Comparator;)V 36 calls 36 returns
+	Method fill ([Ljava/lang/Object;IILjava/lang/Object;)V 27 calls 27 returns
+	Method fill ([Ljava/lang/Object;Ljava/lang/Object;)V 18 calls 18 returns
+	Method sort ([I)V 4 calls 4 returns
+	Method hashCode ([Ljava/lang/Object;)I 3 calls 3 returns
+	Method equals ([B[B)Z 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class sun/misc/URLClassPath 107254 calls
+	Method getLoader (I)Lsun/misc/URLClassPath$Loader; 48585 calls 48585 returns
+	Method getNextLoader ([II)Lsun/misc/URLClassPath$Loader; 48585 calls 48585 returns
+	Method access$100 (Lsun/misc/URLClassPath;[II)Lsun/misc/URLClassPath$Loader; 3287 calls 3287 returns
+	Method getLookupCache (Ljava/lang/String;)[I 2109 calls 2109 returns
+	Method getResource (Ljava/lang/String;Z)Lsun/misc/Resource; 1699 calls 1699 returns
+	Method knownToNotExist (Ljava/lang/String;)Z 1261 calls 1261 returns
+	Method check (Ljava/net/URL;)V 424 calls 424 returns
+	Method findResource (Ljava/lang/String;Z)Ljava/net/URL; 266 calls 266 returns
+	Method access$000 (Lsun/misc/URLClassPath;Ljava/lang/String;)[I 144 calls 144 returns
+	Method checkURL (Ljava/net/URL;)Ljava/net/URL; 134 calls 134 returns
+	Method getResource (Ljava/lang/String;)Lsun/misc/Resource; 133 calls 133 returns
+	Method findResources (Ljava/lang/String;Z)Ljava/util/Enumeration; 96 calls 96 returns
+	Method getLoader (Ljava/net/URL;)Lsun/misc/URLClassPath$Loader; 76 calls 71 returns
+	Method access$300 (Lsun/misc/URLClassPath;)Ljava/security/AccessControlContext; 74 calls 74 returns
+	Method access$200 (Lsun/misc/URLClassPath;)Ljava/net/URLStreamHandler; 74 calls 74 returns
+	Method validateLookupCache (ILjava/lang/String;)V 71 calls 71 returns
+	Method access$500 ()Z 69 calls 69 returns
+	Method access$1500 ()Z 52 calls 52 returns
+	Method getResources (Ljava/lang/String;)Ljava/util/Enumeration; 48 calls 48 returns
+	Method getResources (Ljava/lang/String;Z)Ljava/util/Enumeration; 48 calls 48 returns
+	Method push ([Ljava/net/URL;)V 5 calls 5 returns
+	Method <init> ([Ljava/net/URL;Ljava/net/URLStreamHandlerFactory;Ljava/security/AccessControlContext;)V 4 calls 4 returns
+	Method disableAllLookupCaches ()V 3 calls 3 returns
+	Method initLookupCache (Ljava/lang/ClassLoader;)V 3 calls 3 returns
+	Method addURL (Ljava/net/URL;)V 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method <init> ([Ljava/net/URL;Ljava/security/AccessControlContext;)V 1 calls 1 returns
+Class java/util/zip/ZipFile 105634 calls
+	Method ensureOpen ()V 45787 calls 45787 returns
+	Method getEntry (Ljava/lang/String;)Ljava/util/zip/ZipEntry; 44973 calls 44973 returns
+	Method access$000 (Ljava/util/zip/ZipFile;)Ljava/util/Map; 3224 calls 3224 returns
+	Method access$400 (Ljava/util/zip/ZipFile;)J 2460 calls 2460 returns
+	Method getZipEntry (Ljava/lang/String;J)Ljava/util/zip/ZipEntry; 833 calls 833 returns
+	Method access$1400 (JJJ[BII)I 832 calls 832 returns
+	Method access$1300 (Ljava/util/zip/ZipFile;)V 832 calls 832 returns
+	Method ensureOpenOrZipException ()V 832 calls 832 returns
+	Method access$1200 (J)J 814 calls 814 returns
+	Method access$1100 (J)J 814 calls 814 returns
+	Method access$1000 (JJ)V 814 calls 814 returns
+	Method getInflater ()Ljava/util/zip/Inflater; 814 calls 814 returns
+	Method getInputStream (Ljava/util/zip/ZipEntry;)Ljava/io/InputStream; 814 calls 814 returns
+	Method access$100 (Ljava/util/zip/ZipFile;Ljava/util/zip/Inflater;)V 798 calls 798 returns
+	Method releaseInflater (Ljava/util/zip/Inflater;)V 798 calls 798 returns
+	Method <init> (Ljava/io/File;ILjava/nio/charset/Charset;)V 66 calls 66 returns
+	Method <init> (Ljava/io/File;I)V 66 calls 66 returns
+	Method getName ()Ljava/lang/String; 61 calls 61 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method close ()V 1 calls 1 returns
+Class sun/misc/URLClassPath$JarLoader 102483 calls
+	Method getResource (Ljava/lang/String;Z)Lsun/misc/Resource; 45723 calls 45723 returns
+	Method ensureOpen ()V 44948 calls 44943 returns
+	Method findResource (Ljava/lang/String;Z)Ljava/net/URL; 6092 calls 6092 returns
+	Method access$700 (Lsun/misc/URLClassPath$JarLoader;)Ljava/util/jar/JarFile; 2188 calls 2188 returns
+	Method getResource (Ljava/lang/String;ZLjava/util/Set;)Lsun/misc/Resource; 1197 calls 1197 returns
+	Method access$600 (Lsun/misc/URLClassPath$JarLoader;)Ljava/net/URL; 780 calls 780 returns
+	Method checkResource (Ljava/lang/String;ZLjava/util/jar/JarEntry;)Lsun/misc/Resource; 739 calls 739 returns
+	Method isOptimizable (Ljava/net/URL;)Z 143 calls 143 returns
+	Method <init> (Ljava/net/URL;Ljava/net/URLStreamHandler;Ljava/util/HashMap;Ljava/security/AccessControlContext;)V 74 calls 69 returns
+	Method access$800 (Lsun/misc/URLClassPath$JarLoader;Ljava/net/URL;)Ljava/util/jar/JarFile; 69 calls 64 returns
+	Method getClassPath ()[Ljava/net/URL; 69 calls 69 returns
+	Method getJarFile (Ljava/net/URL;)Ljava/util/jar/JarFile; 69 calls 64 returns
+	Method access$900 (Lsun/misc/URLClassPath$JarLoader;)Lsun/misc/JarIndex; 67 calls 67 returns
+	Method access$1000 (Lsun/misc/URLClassPath$JarLoader;)Lsun/misc/MetaIndex; 64 calls 64 returns
+	Method access$902 (Lsun/misc/URLClassPath$JarLoader;Lsun/misc/JarIndex;)Lsun/misc/JarIndex; 64 calls 64 returns
+	Method access$702 (Lsun/misc/URLClassPath$JarLoader;Ljava/util/jar/JarFile;)Ljava/util/jar/JarFile; 64 calls 64 returns
+	Method checkJar (Ljava/util/jar/JarFile;)Ljava/util/jar/JarFile; 64 calls 64 returns
+	Method parseExtensionsDependencies ()V 61 calls 61 returns
+	Method access$1100 (Lsun/misc/URLClassPath$JarLoader;)Ljava/util/HashMap; 6 calls 6 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method parseClassPath (Ljava/net/URL;Ljava/lang/String;)[Ljava/net/URL; 1 calls 1 returns
+Class java/util/jar/JarFile 96863 calls
+	Method getEntry (Ljava/lang/String;)Ljava/util/zip/ZipEntry; 44973 calls 44973 returns
+	Method getJarEntry (Ljava/lang/String;)Ljava/util/jar/JarEntry; 44942 calls 44942 returns
+	Method maybeInstantiateVerifier ()V 2158 calls 2158 returns
+	Method getInputStream (Ljava/util/zip/ZipEntry;)Ljava/io/InputStream; 742 calls 742 returns
+	Method getManifestFromReference ()Ljava/util/jar/Manifest; 710 calls 710 returns
+	Method getManifest ()Ljava/util/jar/Manifest; 710 calls 710 returns
+	Method access$300 (Ljava/util/jar/JarFile;)Ljava/util/jar/JarVerifier; 708 calls 708 returns
+	Method access$200 (Ljava/util/jar/JarFile;)V 708 calls 708 returns
+	Method ensureInitialization ()V 708 calls 708 returns
+	Method getManEntry ()Ljava/util/jar/JarEntry; 72 calls 72 returns
+	Method <init> (Ljava/io/File;ZI)V 66 calls 66 returns
+	Method <init> (Ljava/lang/String;)V 66 calls 66 returns
+	Method isKnownNotToHaveSpecialAttributes ()Z 61 calls 61 returns
+	Method checkForSpecialAttributes ()V 61 calls 61 returns
+	Method hasClassPathAttribute ()Z 61 calls 61 returns
+	Method getBytes (Ljava/util/zip/ZipEntry;)[B 59 calls 59 returns
+	Method match ([C[B[I[I)Z 57 calls 57 returns
+	Method <clinit> ()V 1 calls 1 returns
+End Class Stats
+
+Results :
+
+Tests run: 77, Failures: 0, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.875 s
+[INFO] Finished at: 2019-07-06T16:44:21-07:00
+[INFO] Final Memory: 20M/511M
+[INFO] ------------------------------------------------------------------------

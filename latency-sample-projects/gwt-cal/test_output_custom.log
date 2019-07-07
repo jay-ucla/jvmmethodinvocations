@@ -1,0 +1,269 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building gwt-cal 0.9.4-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven) @ gwt-cal ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gwt-cal ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 107 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ gwt-cal ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gwt-cal ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/jay/openjdktest/sample-projects/gwt-cal/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.0.2:testCompile (default-testCompile) @ gwt-cal ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.4.3:test (default-test) @ gwt-cal ---
+[INFO] Surefire report directory: /home/jay/openjdktest/sample-projects/gwt-cal/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.bradrydzewski.gwt.calendar.client.util.AppointmentUtilTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
+Running com.bradrydzewski.gwt.calendar.client.DateUtilsTest
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec
+Running com.bradrydzewski.gwt.calendar.client.AppointmentManagerTest
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
+Running com.bradrydzewski.gwt.calendar.client.monthview.AppointmentLayoutDescriptionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+Running com.bradrydzewski.gwt.calendar.client.monthview.DayLayoutDescriptionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+Running com.bradrydzewski.gwt.calendar.client.monthview.MultiDayLayoutDescriptionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running com.bradrydzewski.gwt.calendar.client.monthview.WeekLayoutDescriptionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+Running com.bradrydzewski.gwt.calendar.client.AppointmentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+Running com.bradrydzewski.gwt.calendar.client.monthview.MonthLayoutDescriptionTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec
+Running com.bradrydzewski.gwt.calendar.client.monthview.MonthViewDateUtilsTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 sec
+Running com.bradrydzewski.gwt.calendar.client.monthview.AppointmentStackingManagerTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.065 sec
+
+Results :
+
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 0
+
+VMStart
+VMInit main
+ThreadStart Signal Dispatcher
+ThreadStart main
+ThreadEnd main
+VMDeath
+Begin Class Stats
+Class java/lang/String 419549 calls
+	Method charAt (I)C 161729 calls 161729 returns
+	Method length ()I 105978 calls 105978 returns
+	Method equals (Ljava/lang/Object;)Z 28608 calls 28608 returns
+	Method getChars (II[CI)V 21149 calls 21149 returns
+	Method hashCode ()I 13346 calls 13346 returns
+	Method <init> ([CII)V 10066 calls 10066 returns
+	Method indexOf (II)I 8035 calls 8035 returns
+	Method indexOf (I)I 6807 calls 6807 returns
+	Method startsWith (Ljava/lang/String;I)Z 6269 calls 6269 returns
+	Method toCharArray ()[C 6142 calls 6142 returns
+	Method substring (II)Ljava/lang/String; 5858 calls 5858 returns
+	Method codePointAt (I)I 4840 calls 4840 returns
+	Method <init> ([CZ)V 4785 calls 4785 returns
+	Method regionMatches (ILjava/lang/String;II)Z 4679 calls 4679 returns
+	Method startsWith (Ljava/lang/String;)Z 3367 calls 3367 returns
+	Method endsWith (Ljava/lang/String;)Z 2902 calls 2902 returns
+	Method lastIndexOf (II)I 2736 calls 2736 returns
+	Method indexOf ([CII[CIII)I 2710 calls 2710 returns
+	Method indexOf (Ljava/lang/String;I)I 2710 calls 2710 returns
+	Method lastIndexOf (I)I 2524 calls 2524 returns
+	Method replace (CC)Ljava/lang/String; 2153 calls 2153 returns
+	Method indexOf (Ljava/lang/String;)I 1836 calls 1836 returns
+	Method toString ()Ljava/lang/String; 1400 calls 1400 returns
+	Method regionMatches (ZILjava/lang/String;II)Z 1253 calls 1253 returns
+	Method equalsIgnoreCase (Ljava/lang/String;)Z 1149 calls 1149 returns
+	Method substring (I)Ljava/lang/String; 1055 calls 1055 returns
+	Method subSequence (II)Ljava/lang/CharSequence; 976 calls 976 returns
+	Method concat (Ljava/lang/String;)Ljava/lang/String; 796 calls 796 returns
+	Method getChars ([CI)V 796 calls 796 returns
+	Method getBytes (Ljava/lang/String;)[B 741 calls 741 returns
+	Method lastIndexOf ([CII[CIII)I 267 calls 267 returns
+	Method lastIndexOf (Ljava/lang/String;I)I 267 calls 267 returns
+	Method lastIndexOf (Ljava/lang/String;)I 267 calls 267 returns
+	Method checkBounds ([BII)V 225 calls 225 returns
+	Method format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; 198 calls 198 returns
+	Method <init> ([BIILjava/lang/String;)V 174 calls 174 returns
+	Method toLowerCase (Ljava/util/Locale;)Ljava/lang/String; 168 calls 168 returns
+	Method toLowerCase ()Ljava/lang/String; 167 calls 167 returns
+	Method <init> ([BLjava/lang/String;)V 123 calls 123 returns
+	Method toUpperCase (Ljava/util/Locale;)Ljava/lang/String; 67 calls 67 returns
+	Method valueOf (Ljava/lang/Object;)Ljava/lang/String; 64 calls 64 returns
+	Method <init> ([BIII)V 51 calls 51 returns
+	Method valueOf (I)Ljava/lang/String; 44 calls 44 returns
+	Method trim ()Ljava/lang/String; 19 calls 19 returns
+	Method compareTo (Ljava/lang/String;)I 19 calls 19 returns
+	Method <init> ([C)V 13 calls 13 returns
+	Method contains (Ljava/lang/CharSequence;)Z 12 calls 12 returns
+	Method compareTo (Ljava/lang/Object;)I 8 calls 8 returns
+	Method isEmpty ()Z 1 calls 1 returns
+Class java/lang/AbstractStringBuilder 147190 calls
+	Method ensureCapacityInternal (I)V 68209 calls 68209 returns
+	Method append (C)Ljava/lang/AbstractStringBuilder; 58379 calls 58379 returns
+	Method append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 8028 calls 8028 returns
+	Method <init> (I)V 5179 calls 5179 returns
+	Method newCapacity (I)I 4679 calls 4679 returns
+	Method append ([CII)Ljava/lang/AbstractStringBuilder; 825 calls 825 returns
+	Method setLength (I)V 796 calls 796 returns
+	Method append (Ljava/lang/CharSequence;)Ljava/lang/AbstractStringBuilder; 792 calls 792 returns
+	Method append (I)Ljava/lang/AbstractStringBuilder; 174 calls 174 returns
+	Method length ()I 75 calls 75 returns
+	Method getChars (II[CI)V 47 calls 47 returns
+	Method append (J)Ljava/lang/AbstractStringBuilder; 7 calls 7 returns
+Class java/lang/Character 98190 calls
+	Method isHighSurrogate (C)Z 24228 calls 24228 returns
+	Method charCount (I)I 24086 calls 24086 returns
+	Method codePointAt (Ljava/lang/CharSequence;I)I 19388 calls 19388 returns
+	Method isSurrogate (C)Z 5582 calls 5582 returns
+	Method codePointAtImpl ([CII)I 4840 calls 4840 returns
+	Method toLowerCase (I)I 2499 calls 2499 returns
+	Method toLowerCase (C)C 2499 calls 2499 returns
+	Method digit (II)I 2430 calls 2430 returns
+	Method digit (CI)I 2430 calls 2430 returns
+	Method toUpperCaseEx (I)I 2180 calls 2180 returns
+	Method toUpperCase (I)I 1670 calls 1670 returns
+	Method toUpperCase (C)C 1670 calls 1670 returns
+	Method isWhitespace (I)Z 1660 calls 1660 returns
+	Method isWhitespace (C)Z 1660 calls 1660 returns
+	Method getType (I)I 456 calls 456 returns
+	Method isUpperCase (I)Z 396 calls 396 returns
+	Method isUpperCase (C)Z 396 calls 396 returns
+	Method isLetterOrDigit (I)Z 45 calls 45 returns
+	Method isLetterOrDigit (C)Z 45 calls 45 returns
+	Method isLetter (I)Z 15 calls 15 returns
+	Method isLetter (C)Z 15 calls 15 returns
+Class java/util/HashMap 80916 calls
+	Method hash (Ljava/lang/Object;)I 23278 calls 23278 returns
+	Method getNode (ILjava/lang/Object;)Ljava/util/HashMap$Node; 18231 calls 18231 returns
+	Method get (Ljava/lang/Object;)Ljava/lang/Object; 16886 calls 16886 returns
+	Method putVal (ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; 5047 calls 5047 returns
+	Method put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 4844 calls 4844 returns
+	Method afterNodeInsertion (Z)V 3215 calls 3215 returns
+	Method newNode (ILjava/lang/Object;Ljava/lang/Object;Ljava/util/HashMap$Node;)Ljava/util/HashMap$Node; 3215 calls 3215 returns
+	Method <init> ()V 2084 calls 2084 returns
+	Method resize ()[Ljava/util/HashMap$Node; 1102 calls 1102 returns
+	Method afterNodeAccess (Ljava/util/HashMap$Node;)V 923 calls 923 returns
+	Method containsKey (Ljava/lang/Object;)Z 770 calls 770 returns
+	Method keySet ()Ljava/util/Set; 724 calls 724 returns
+	Method tableSizeFor (I)I 145 calls 145 returns
+	Method size ()I 138 calls 138 returns
+	Method putMapEntries (Ljava/util/Map;Z)V 102 calls 102 returns
+	Method entrySet ()Ljava/util/Set; 93 calls 93 returns
+	Method <init> (IF)V 50 calls 50 returns
+	Method <init> (I)V 44 calls 44 returns
+	Method values ()Ljava/util/Collection; 10 calls 10 returns
+	Method isEmpty ()Z 6 calls 6 returns
+	Method clear ()V 5 calls 5 returns
+	Method <init> (Ljava/util/Map;)V 4 calls 4 returns
+Class java/lang/StringBuffer 64379 calls
+	Method append (C)Ljava/lang/StringBuffer; 56155 calls 56155 returns
+	Method toString ()Ljava/lang/String; 2988 calls 2988 returns
+	Method <init> (I)V 1983 calls 1983 returns
+	Method append (Ljava/lang/String;)Ljava/lang/StringBuffer; 1297 calls 1297 returns
+	Method append ([CII)Ljava/lang/StringBuffer; 825 calls 825 returns
+	Method setLength (I)V 796 calls 796 returns
+	Method <init> ()V 213 calls 213 returns
+	Method append (I)Ljava/lang/StringBuffer; 92 calls 92 returns
+	Method append (Ljava/lang/Object;)Ljava/lang/StringBuffer; 30 calls 30 returns
+Class java/util/regex/Pattern$BitClass 64155 calls
+	Method isSatisfiedBy (I)Z 62668 calls 62668 returns
+	Method add (II)Ljava/util/regex/Pattern$BitClass; 1115 calls 1115 returns
+	Method <init> ()V 371 calls 371 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class java/util/ArrayList 58570 calls
+	Method access$000 (Ljava/util/ArrayList;)I 17091 calls 17091 returns
+	Method iterator ()Ljava/util/Iterator; 6664 calls 6664 returns
+	Method size ()I 5887 calls 5887 returns
+	Method rangeCheck (I)V 4552 calls 4552 returns
+	Method elementData (I)Ljava/lang/Object; 4552 calls 4552 returns
+	Method get (I)Ljava/lang/Object; 4548 calls 4548 returns
+	Method ensureExplicitCapacity (I)V 2792 calls 2792 returns
+	Method ensureCapacityInternal (I)V 2792 calls 2792 returns
+	Method calculateCapacity ([Ljava/lang/Object;I)I 2792 calls 2792 returns
+	Method add (Ljava/lang/Object;)Z 2766 calls 2766 returns
+	Method <init> ()V 1929 calls 1929 returns
+	Method toArray ([Ljava/lang/Object;)[Ljava/lang/Object; 942 calls 942 returns
+	Method grow (I)V 605 calls 605 returns
+	Method isEmpty ()Z 348 calls 348 returns
+	Method <init> (I)V 122 calls 122 returns
+	Method toArray ()[Ljava/lang/Object; 35 calls 35 returns
+	Method indexOf (Ljava/lang/Object;)I 26 calls 26 returns
+	Method addAll (Ljava/util/Collection;)Z 22 calls 22 returns
+	Method contains (Ljava/lang/Object;)Z 22 calls 22 returns
+	Method <init> (Ljava/util/Collection;)V 22 calls 22 returns
+	Method clear ()V 16 calls 16 returns
+	Method remove (Ljava/lang/Object;)Z 15 calls 15 returns
+	Method fastRemove (I)V 14 calls 14 returns
+	Method rangeCheckForAdd (I)V 4 calls 4 returns
+	Method remove (I)Ljava/lang/Object; 4 calls 4 returns
+	Method add (ILjava/lang/Object;)V 4 calls 4 returns
+	Method sort (Ljava/util/Comparator;)V 3 calls 3 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class java/util/regex/Pattern$7 43988 calls
+	Method isSatisfiedBy (I)Z 43252 calls 43252 returns
+	Method <init> (Ljava/util/regex/Pattern$CharProperty;Ljava/util/regex/Pattern$CharProperty;)V 736 calls 736 returns
+Class java/util/regex/Pattern 43438 calls
+	Method has (I)Z 12671 calls 12671 returns
+	Method peek ()I 7453 calls 7453 returns
+	Method isSupplementary (I)Z 5582 calls 5582 returns
+	Method next ()I 2430 calls 2430 returns
+	Method unread ()V 1484 calls 1484 returns
+	Method nextEscaped ()I 1484 calls 1484 returns
+	Method closure (Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node; 1303 calls 1303 returns
+	Method range (Ljava/util/regex/Pattern$BitClass;)Ljava/util/regex/Pattern$CharProperty; 1117 calls 1117 returns
+	Method bitsOrSingle (Ljava/util/regex/Pattern$BitClass;I)Ljava/util/regex/Pattern$CharProperty; 1115 calls 1115 returns
+	Method flags ()I 1115 calls 1115 returns
+	Method escape (ZZZ)I 1111 calls 1111 returns
+	Method skip ()I 1111 calls 1111 returns
+	Method setDifference (Ljava/util/regex/Pattern$CharProperty;Ljava/util/regex/Pattern$CharProperty;)Ljava/util/regex/Pattern$CharProperty; 736 calls 736 returns
+	Method access$200 (III)Z 396 calls 396 returns
+	Method inRange (III)Z 396 calls 396 returns
+	Method matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher; 382 calls 382 returns
+	Method sequence (Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node; 375 calls 375 returns
+	Method expr (Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node; 375 calls 375 returns
+	Method atom ()Ljava/util/regex/Pattern$Node; 374 calls 374 returns
+	Method newSingle (I)Ljava/util/regex/Pattern$CharProperty; 371 calls 371 returns
+	Method clazz (Z)Ljava/util/regex/Pattern$CharProperty; 371 calls 371 returns
+	Method append (II)V 371 calls 371 returns
+	Method createGroup (Z)Ljava/util/regex/Pattern$Node; 190 calls 190 returns
+	Method group0 ()Ljava/util/regex/Pattern$Node; 190 calls 190 returns
+	Method accept (ILjava/lang/String;)V 190 calls 190 returns
+	Method compile ()V 185 calls 185 returns
+	Method RemoveQEQuoting ()V 185 calls 185 returns
+	Method <init> (Ljava/lang/String;I)V 185 calls 185 returns
+	Method compile (Ljava/lang/String;)Ljava/util/regex/Pattern; 185 calls 185 returns
+	Method union (Ljava/util/regex/Pattern$CharProperty;Ljava/util/regex/Pattern$CharProperty;)Ljava/util/regex/Pattern$CharProperty; 2 calls 2 returns
+	Method rangeFor (II)Ljava/util/regex/Pattern$CharProperty; 2 calls 2 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class java/io/BufferedWriter 40227 calls
+	Method ensureOpen ()V 13148 calls 13148 returns
+	Method write (Ljava/lang/String;II)V 12949 calls 12949 returns
+	Method min (II)I 12940 calls 12940 returns
+	Method <init> (Ljava/io/Writer;I)V 382 calls 382 returns
+	Method <init> (Ljava/io/Writer;)V 382 calls 382 returns
+	Method flushBuffer ()V 199 calls 199 returns
+	Method close ()V 195 calls 195 returns
+	Method newLine ()V 30 calls 30 returns
+	Method <clinit> ()V 1 calls 1 returns
+	Method flush ()V 1 calls 1 returns
+End Class Stats
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.590 s
+[INFO] Finished at: 2019-07-06T16:43:43-07:00
+[INFO] Final Memory: 11M/303M
+[INFO] ------------------------------------------------------------------------

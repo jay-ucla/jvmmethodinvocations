@@ -1,0 +1,239 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JBoss Log Manager 1.4.0.Beta1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-java-version) @ jboss-logmanager ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven-version) @ jboss-logmanager ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create-timestamp (get-build-timestamp) @ jboss-logmanager ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create (get-scm-revision) @ jboss-logmanager ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/jay/openjdktest/sample-projects/jboss-logmanager && git show
+[INFO] Working directory: /home/jay/openjdktest/sample-projects/jboss-logmanager
+[WARNING] Cannot get the revision information from the scm repository, proceeding with revision of UNKNOWN : 
+Exception while executing SCM command.
+[INFO] Storing buildNumber: UNKNOWN at timestamp: 1562456650482
+[INFO] Executing: /bin/sh -c cd /home/jay/openjdktest/sample-projects/jboss-logmanager && git show
+[INFO] Working directory: /home/jay/openjdktest/sample-projects/jboss-logmanager
+[WARNING] Cannot get the branch information from the scm repository, proceeding with UNKNOWN_BRANCH : 
+Exception while executing SCM command.
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jboss-logmanager ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ jboss-logmanager ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.1.0:manifest (bundle-manifest) @ jboss-logmanager ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jboss-logmanager ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ jboss-logmanager ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ jboss-logmanager ---
+[INFO] Surefire report directory: /home/jay/openjdktest/sample-projects/jboss-logmanager/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+4639
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.302 sec
+VMStart
+VMInit main
+ThreadStart Signal Dispatcher
+ThreadStart main
+ThreadStart Thread-0
+ThreadEnd Thread-0
+ThreadEnd main
+VMDeath
+Begin Class Stats
+Class java/io/BufferedOutputStream 2089710 calls
+	Method write (I)V 1888926 calls 1888926 returns
+	Method flushBuffer ()V 100328 calls 100328 returns
+	Method flush ()V 100300 calls 100300 returns
+	Method write ([BII)V 146 calls 146 returns
+	Method <init> (Ljava/io/OutputStream;I)V 6 calls 6 returns
+	Method <init> (Ljava/io/OutputStream;)V 4 calls 4 returns
+Class java/io/FilterOutputStream 2089012 calls
+	Method write (I)V 1888938 calls 1888938 returns
+	Method flush ()V 100010 calls 100010 returns
+	Method write ([BII)V 100004 calls 100004 returns
+	Method <init> (Ljava/io/OutputStream;)V 54 calls 54 returns
+	Method close ()V 6 calls 6 returns
+Class org/jboss/logmanager/handlers/UninterruptibleOutputStream 2088963 calls
+	Method write (I)V 1888938 calls 1888938 returns
+	Method flush ()V 100010 calls 100010 returns
+	Method write ([BII)V 100004 calls 100004 returns
+	Method <init> (Ljava/io/OutputStream;)V 8 calls 8 returns
+	Method close ()V 3 calls 3 returns
+Class java/lang/AbstractStringBuilder 1997606 calls
+	Method ensureCapacityInternal (I)V 542052 calls 542052 returns
+	Method append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 321482 calls 321482 returns
+	Method <init> (I)V 306563 calls 306563 returns
+	Method newCapacity (I)I 206055 calls 206055 returns
+	Method length ()I 200324 calls 200324 returns
+	Method append (I)Ljava/lang/AbstractStringBuilder; 100388 calls 100388 returns
+	Method getChars (II[CI)V 100320 calls 100320 returns
+	Method append (Ljava/lang/CharSequence;)Ljava/lang/AbstractStringBuilder; 100112 calls 100112 returns
+	Method append (Ljava/lang/AbstractStringBuilder;)Ljava/lang/AbstractStringBuilder; 100109 calls 100109 returns
+	Method append (C)Ljava/lang/AbstractStringBuilder; 19640 calls 19640 returns
+	Method append (J)Ljava/lang/AbstractStringBuilder; 134 calls 134 returns
+	Method append (Ljava/lang/CharSequence;II)Ljava/lang/AbstractStringBuilder; 115 calls 115 returns
+	Method append (Ljava/lang/StringBuffer;)Ljava/lang/AbstractStringBuilder; 85 calls 85 returns
+	Method charAt (I)C 84 calls 84 returns
+	Method setLength (I)V 55 calls 55 returns
+	Method append ([CII)Ljava/lang/AbstractStringBuilder; 44 calls 44 returns
+	Method append (D)Ljava/lang/AbstractStringBuilder; 43 calls 43 returns
+	Method appendNull ()Ljava/lang/AbstractStringBuilder; 1 calls 1 returns
+Class java/nio/Buffer 1604070 calls
+	Method position ()I 400785 calls 400785 returns
+	Method position (I)Ljava/nio/Buffer; 300667 calls 300667 returns
+	Method limit ()I 300580 calls 300580 returns
+	Method limit (I)Ljava/nio/Buffer; 100264 calls 100264 returns
+	Method <init> (IIII)V 100258 calls 100258 returns
+	Method hasRemaining ()Z 100241 calls 100241 returns
+	Method flip ()Ljava/nio/Buffer; 100196 calls 100196 returns
+	Method remaining ()I 100183 calls 100183 returns
+	Method clear ()Ljava/nio/Buffer; 100168 calls 100168 returns
+	Method checkIndex (I)I 640 calls 640 returns
+	Method nextGetIndex (I)I 50 calls 50 returns
+	Method nextGetIndex ()I 26 calls 26 returns
+	Method discardMark ()V 6 calls 6 returns
+	Method capacity ()I 6 calls 6 returns
+Class java/lang/String 1430814 calls
+	Method length ()I 541131 calls 541131 returns
+	Method getChars (II[CI)V 421924 calls 421924 returns
+	Method <init> ([CII)V 211697 calls 211697 returns
+	Method charAt (I)C 98933 calls 98933 returns
+	Method equals (Ljava/lang/Object;)Z 36936 calls 36936 returns
+	Method hashCode ()I 31134 calls 31134 returns
+	Method startsWith (Ljava/lang/String;I)Z 9721 calls 9721 returns
+	Method indexOf (II)I 9034 calls 9034 returns
+	Method indexOf (I)I 7314 calls 7314 returns
+	Method toCharArray ()[C 6951 calls 6951 returns
+	Method substring (II)Ljava/lang/String; 6218 calls 6218 returns
+	Method startsWith (Ljava/lang/String;)Z 5834 calls 5834 returns
+	Method <init> ([CZ)V 4565 calls 4565 returns
+	Method lastIndexOf (II)I 4044 calls 4044 returns
+	Method endsWith (Ljava/lang/String;)Z 3887 calls 3887 returns
+	Method lastIndexOf (I)I 3774 calls 3774 returns
+	Method indexOf ([CII[CIII)I 3687 calls 3687 returns
+	Method indexOf (Ljava/lang/String;I)I 3687 calls 3687 returns
+	Method replace (CC)Ljava/lang/String; 3025 calls 3025 returns
+	Method indexOf (Ljava/lang/String;)I 2483 calls 2483 returns
+	Method regionMatches (ZILjava/lang/String;II)Z 1754 calls 1754 returns
+	Method equalsIgnoreCase (Ljava/lang/String;)Z 1629 calls 1629 returns
+	Method compareTo (Ljava/lang/String;)I 1404 calls 1404 returns
+	Method substring (I)Ljava/lang/String; 1336 calls 1336 returns
+	Method getBytes (Ljava/lang/String;)[B 1072 calls 1072 returns
+	Method concat (Ljava/lang/String;)Ljava/lang/String; 1055 calls 1055 returns
+	Method getChars ([CI)V 1055 calls 1055 returns
+	Method toString ()Ljava/lang/String; 893 calls 893 returns
+	Method lastIndexOf ([CII[CIII)I 838 calls 838 returns
+	Method lastIndexOf (Ljava/lang/String;I)I 838 calls 838 returns
+	Method lastIndexOf (Ljava/lang/String;)I 813 calls 813 returns
+	Method checkBounds ([BII)V 370 calls 370 returns
+	Method toLowerCase (Ljava/util/Locale;)Ljava/lang/String; 326 calls 326 returns
+	Method <init> ([BIILjava/lang/String;)V 265 calls 265 returns
+	Method valueOf (Ljava/lang/Object;)Ljava/lang/String; 259 calls 259 returns
+	Method toUpperCase (Ljava/util/Locale;)Ljava/lang/String; 228 calls 228 returns
+	Method toLowerCase ()Ljava/lang/String; 171 calls 171 returns
+	Method codePointAt (I)I 164 calls 164 returns
+	Method <init> ([BLjava/lang/String;)V 123 calls 123 returns
+	Method <init> ([BIII)V 105 calls 105 returns
+	Method trim ()Ljava/lang/String; 52 calls 52 returns
+	Method contains (Ljava/lang/CharSequence;)Z 20 calls 20 returns
+	Method toUpperCase ()Ljava/lang/String; 15 calls 15 returns
+	Method <init> ([C)V 13 calls 13 returns
+	Method compareTo (Ljava/lang/Object;)I 8 calls 8 returns
+	Method subSequence (II)Ljava/lang/CharSequence; 8 calls 8 returns
+	Method valueOf (I)Ljava/lang/String; 5 calls 5 returns
+	Method replaceAll (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 4 calls 4 returns
+	Method valueOf (D)Ljava/lang/String; 2 calls 2 returns
+	Method format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; 2 calls 2 returns
+	Method split (Ljava/lang/String;)[Ljava/lang/String; 2 calls 2 returns
+	Method split (Ljava/lang/String;I)[Ljava/lang/String; 2 calls 2 returns
+	Method valueOf (J)Ljava/lang/String; 1 calls 1 returns
+	Method regionMatches (ILjava/lang/String;II)Z 1 calls 1 returns
+	Method isEmpty ()Z 1 calls 1 returns
+	Method <init> (Ljava/lang/String;)V 1 calls 1 returns
+Class java/lang/StringBuilder 1324162 calls
+	Method append (Ljava/lang/String;)Ljava/lang/StringBuilder; 310813 calls 310813 returns
+	Method toString ()Ljava/lang/String; 204256 calls 204256 returns
+	Method <init> ()V 204253 calls 204253 returns
+	Method length ()I 200324 calls 200324 returns
+	Method append (I)Ljava/lang/StringBuilder; 100360 calls 100360 returns
+	Method getChars (II[CI)V 100235 calls 100235 returns
+	Method <init> (I)V 100180 calls 100180 returns
+	Method append (Ljava/lang/CharSequence;)Ljava/lang/StringBuilder; 100008 calls 100008 returns
+	Method append (C)Ljava/lang/StringBuilder; 3150 calls 3150 returns
+	Method append (Ljava/lang/Object;)Ljava/lang/StringBuilder; 213 calls 213 returns
+	Method <init> (Ljava/lang/String;)V 101 calls 101 returns
+	Method charAt (I)C 84 calls 84 returns
+	Method append (J)Ljava/lang/StringBuilder; 48 calls 48 returns
+	Method append (D)Ljava/lang/StringBuilder; 43 calls 43 returns
+	Method append ([CII)Ljava/lang/StringBuilder; 43 calls 43 returns
+	Method setLength (I)V 42 calls 42 returns
+	Method append (Ljava/lang/CharSequence;)Ljava/lang/Appendable; 3 calls 3 returns
+	Method append (Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; 3 calls 3 returns
+	Method append (Ljava/lang/CharSequence;II)Ljava/lang/StringBuilder; 3 calls 3 returns
+Class sun/nio/cs/StreamEncoder 801273 calls
+	Method ensureOpen ()V 200177 calls 200177 returns
+	Method implWrite ([CII)V 100168 calls 100168 returns
+	Method writeBytes ()V 100168 calls 100168 returns
+	Method write ([CII)V 100168 calls 100168 returns
+	Method implFlushBuffer ()V 100153 calls 100153 returns
+	Method implFlush ()V 100009 calls 100009 returns
+	Method flush ()V 100009 calls 100009 returns
+	Method isOpen ()Z 144 calls 144 returns
+	Method flushBuffer ()V 144 calls 144 returns
+	Method <init> (Ljava/io/OutputStream;Ljava/lang/Object;Ljava/nio/charset/CharsetEncoder;)V 25 calls 25 returns
+	Method <init> (Ljava/io/OutputStream;Ljava/lang/Object;Ljava/nio/charset/Charset;)V 25 calls 25 returns
+	Method forOutputStreamWriter (Ljava/io/OutputStream;Ljava/lang/Object;Ljava/lang/String;)Lsun/nio/cs/StreamEncoder; 25 calls 25 returns
+	Method implClose ()V 19 calls 19 returns
+	Method flushLeftoverChar (Ljava/nio/CharBuffer;Z)V 19 calls 19 returns
+	Method close ()V 19 calls 19 returns
+	Method <clinit> ()V 1 calls 1 returns
+Class java/nio/ByteBuffer 701497 calls
+	Method arrayOffset ()I 400774 calls 400774 returns
+	Method array ()[B 200374 calls 200374 returns
+	Method hasArray ()Z 100200 calls 100200 returns
+	Method <init> (IIII[BI)V 59 calls 59 returns
+	Method allocate (I)Ljava/nio/ByteBuffer; 28 calls 28 returns
+	Method wrap ([B)Ljava/nio/ByteBuffer; 25 calls 25 returns
+	Method wrap ([BII)Ljava/nio/ByteBuffer; 25 calls 25 returns
+	Method order (Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer; 6 calls 6 returns
+	Method <init> (IIII)V 6 calls 6 returns
+Class java/nio/CharBuffer 701386 calls
+	Method arrayOffset ()I 300600 calls 300600 returns
+	Method array ()[C 100200 calls 100200 returns
+	Method hasArray ()Z 100200 calls 100200 returns
+	Method <init> (IIII[CI)V 100193 calls 100193 returns
+	Method wrap ([CII)Ljava/nio/CharBuffer; 100174 calls 100174 returns
+	Method allocate (I)Ljava/nio/CharBuffer; 19 calls 19 returns
+End Class Stats
+
+Results :
+
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.994 s
+[INFO] Finished at: 2019-07-06T16:44:16-07:00
+[INFO] Final Memory: 14M/295M
+[INFO] ------------------------------------------------------------------------

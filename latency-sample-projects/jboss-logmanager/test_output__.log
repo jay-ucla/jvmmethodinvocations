@@ -1,0 +1,65 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JBoss Log Manager 1.4.0.Beta1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-java-version) @ jboss-logmanager ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.0:enforce (enforce-maven-version) @ jboss-logmanager ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create-timestamp (get-build-timestamp) @ jboss-logmanager ---
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0:create (get-scm-revision) @ jboss-logmanager ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/jay/openjdktest/sample-projects/jboss-logmanager && git show
+[INFO] Working directory: /home/jay/openjdktest/sample-projects/jboss-logmanager
+[WARNING] Cannot get the revision information from the scm repository, proceeding with revision of UNKNOWN : 
+Exception while executing SCM command.
+[INFO] Storing buildNumber: UNKNOWN at timestamp: 1562404563190
+[INFO] Executing: /bin/sh -c cd /home/jay/openjdktest/sample-projects/jboss-logmanager && git show
+[INFO] Working directory: /home/jay/openjdktest/sample-projects/jboss-logmanager
+[WARNING] Cannot get the branch information from the scm repository, proceeding with UNKNOWN_BRANCH : 
+Exception while executing SCM command.
+[INFO] Storing buildScmBranch: UNKNOWN_BRANCH
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ jboss-logmanager ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ jboss-logmanager ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-bundle-plugin:2.1.0:manifest (bundle-manifest) @ jboss-logmanager ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ jboss-logmanager ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ jboss-logmanager ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.11:test (default-test) @ jboss-logmanager ---
+[INFO] Surefire report directory: /home/jay/openjdktest/sample-projects/jboss-logmanager/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running TestSuite
+255
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 sec
+
+Results :
+
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.888 s
+[INFO] Finished at: 2019-07-06T02:16:04-07:00
+[INFO] Final Memory: 14M/295M
+[INFO] ------------------------------------------------------------------------
