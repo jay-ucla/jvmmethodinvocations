@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.google.code.configprocessor.parsing.ProcessingConfigurationParserTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.327 sec
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.369 sec

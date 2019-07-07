@@ -1,0 +1,62 @@
+Entered method Lcom/test/Main; main ([Ljava/lang/String;)V
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Performing static invocation
+Entered method Lcom/test/Main; staticHello ()V
+Hello static world
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Created Main class instance
+Entered method Lcom/test/Main; <init> ()V
+Entered method Lcom/test/Main$$Lambda$1/1283928880; <init> ()V
+Entered method Lcom/test/Main$$Lambda$1/1283928880; test (Ljava/lang/Object;)Z
+Entered method Lcom/test/Main; lambda$main$0 (Ljava/lang/String;)Z
+Hi from lamda land!
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Invoked Main instance method
+Entered method Lcom/test/Main; instanceHello (Ljava/lang/String;)V
+Hello instance world J
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Invoked other Main instance method
+Entered method Lcom/test/Main; instanceHello ()V
+Hello instance world
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Invoking Main inner method
+Entered method Lcom/test/Main; innerHello ()V
+Entered method Lcom/test/Main; instanceHello ()V
+Hello instance world
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Creating instance of Other class
+Entered method Lcom/test/OtherClass; <init> ()V
+Entered method Lcom/test/DynamicProxy; <init> ()V
+Entered method Lcom/sun/proxy/$Proxy0; <clinit> ()V
+Entered method Lcom/sun/proxy/$Proxy0; <init> (Ljava/lang/reflect/InvocationHandler;)V
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Invoked OC instance method - should call private hello
+Entered method Lcom/test/OtherClass; instanceHello (Ljava/lang/String;)V
+Entered method Lcom/test/OtherClass; privateHello (Ljava/lang/String;)V
+Hello from the other world Jprivately
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Invoked other OC instance method - should call private hello
+Entered method Lcom/test/OtherClass; instanceHello ()V
+Entered method Lcom/test/OtherClass; privateHello (Ljava/lang/String;)V
+Hello from the other world privately
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Invoking main class reflective hello from OC
+Entered method Lcom/test/OtherClass; refelctOnMe (Lcom/test/Main;)V
+Entered method Lcom/test/Main; reflectiveHello (Ljava/lang/String;)V
+Hello reflective world . This call came from the OtherClass.
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Invoking dynamic proxy
+Entered method Lcom/test/OtherClass; dynamicProxyRun ()V
+Entered method Lcom/sun/proxy/$Proxy0; sayHello ()V
+Entered method Lcom/test/DynamicProxy; invoke (Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
+Dynamic Proxy hijacked : sayHello
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Invoking on object of Concrete A
+Entered method Lcom/test/concreteA; <init> ()V
+Entered method Lcom/test/concreteA; interfacedHello (Ljava/lang/String;)V
+Hello from class A J
+Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
+Creating anonymous class
+Entered method Lcom/test/Main$1; <init> ()V
+Entered method Lcom/test/Main$1; interfacedHello (Ljava/lang/String;)V
+Hi from the anonymous class
