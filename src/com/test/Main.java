@@ -21,9 +21,8 @@ public class Main {
     public static void staticHello(){
         System.out.println("Hello static world");
     }
-    public static void staticHello(String str){
-        System.out.println(str);
-    }
+    public static void staticHello(String str){ System.out.println(str);}
+    public static boolean lambdaPrint(String str){System.out.println(str); return true;};
     public void instanceHello(String str){
         System.out.println("Hello instance world "+str);
     }
@@ -53,11 +52,8 @@ public class Main {
         Main.staticHello();
         Main.staticHello("Created Main class instance");
         Main m = new Main();
-        Predicate<String> lambdaPrint = t -> {
-            System.out.println("Hi from lamda land!");
-            return t.length() > 10;
-        };
-        lambdaPrint.test("1");
+        Predicate<String> lambdaPrint = Main::lambdaPrint;
+        lambdaPrint.test("lambdaprint");
 
 
         Main.staticHello("Invoked Main instance method");
@@ -80,6 +76,8 @@ public class Main {
         Main.staticHello("Invoking on object of Concrete A");
         interfaceClass ic = new concreteA();
         ic.interfacedHello("J");
+        ic.defaultHello("JJ");
+        interfaceClass.defaultstatic();
 
         Main.staticHello("Creating anonymous class");
         interfaceClass ac = new interfaceClass() {

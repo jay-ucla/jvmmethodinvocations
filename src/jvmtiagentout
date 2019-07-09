@@ -8,8 +8,8 @@ Created Main class instance
 Entered method Lcom/test/Main; <init> ()V
 Entered method Lcom/test/Main$$Lambda$1/1283928880; <init> ()V
 Entered method Lcom/test/Main$$Lambda$1/1283928880; test (Ljava/lang/Object;)Z
-Entered method Lcom/test/Main; lambda$main$0 (Ljava/lang/String;)Z
-Hi from lamda land!
+Entered method Lcom/test/Main; lambdaPrint (Ljava/lang/String;)Z
+lambdaprint
 Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
 Invoked Main instance method
 Entered method Lcom/test/Main; instanceHello (Ljava/lang/String;)V
@@ -55,6 +55,10 @@ Invoking on object of Concrete A
 Entered method Lcom/test/concreteA; <init> ()V
 Entered method Lcom/test/concreteA; interfacedHello (Ljava/lang/String;)V
 Hello from class A J
+Entered method Lcom/test/interfaceClass; defaultHello (Ljava/lang/String;)V
+default Hi from interfaceJJ
+Entered method Lcom/test/interfaceClass; defaultstatic ()V
+static hi from interface
 Entered method Lcom/test/Main; staticHello (Ljava/lang/String;)V
 Creating anonymous class
 Entered method Lcom/test/Main$1; <init> ()V
