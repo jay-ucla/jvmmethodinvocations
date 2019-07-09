@@ -64,3 +64,11 @@ Creating anonymous class
 Entered method Lcom/test/Main$1; <init> ()V
 Entered method Lcom/test/Main$1; interfacedHello (Ljava/lang/String;)V
 Hi from the anonymous class
+Entered method Lcom/test/CustomClassLoader; <init> ()V
+Entered method Lcom/test/CustomClassLoader; findClass (Ljava/lang/String;)Ljava/lang/Class;
+Entered method Lcom/test/CustomClassLoader; loadClassFromFile (Ljava/lang/String;)[B
+Entered method Lcom/test/CustomClassLoaderTarget; <init> ()V
+Created instance of class
+Entered method Lcom/test/CustomClassLoaderTarget; accessMethod ()V
+Entered method Lcom/test/CustomClassLoaderTarget; customClassPrint ()V
+I'm custom loaded

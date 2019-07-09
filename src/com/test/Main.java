@@ -87,5 +87,17 @@ public class Main {
             }
         } ;
         ac.interfacedHello("");
+        CustomClassLoader customClassLoader = new CustomClassLoader();
+        Class<?> c = null;
+        try {
+            c = customClassLoader.findClass(CustomClassLoaderTarget.class.getName());
+            Object ob = c.newInstance();
+
+            Method md = c.getMethod("accessMethod");
+            md.invoke(ob);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }
