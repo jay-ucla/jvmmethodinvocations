@@ -1,0 +1,57 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Agent_OnLoad	mtrace.c	/^Agent_OnLoad(JavaVM *vm, char *options, void *reserved)$/;"	f
+Agent_OnUnload	mtrace.c	/^Agent_OnUnload(JavaVM *vm)$/;"	f
+ClassInfo	mtrace.c	/^typedef struct ClassInfo {$/;"	s	file:
+ClassInfo	mtrace.c	/^} ClassInfo;$/;"	t	typeref:struct:ClassInfo	file:
+GlobalAgentData	mtrace.c	/^} GlobalAgentData;$/;"	t	typeref:struct:__anon1	file:
+MAX_METHOD_NAME_LENGTH	mtrace.c	52;"	d	file:
+MAX_THREAD_NAME_LENGTH	mtrace.c	51;"	d	file:
+MAX_TOKEN_LENGTH	mtrace.c	50;"	d	file:
+MTRACE_class	mtrace.c	82;"	d	file:
+MTRACE_engaged	mtrace.c	87;"	d	file:
+MTRACE_entry	mtrace.c	83;"	d	file:
+MTRACE_exit	mtrace.c	84;"	d	file:
+MTRACE_native_entry	mtrace.c	/^MTRACE_native_entry(JNIEnv *env, jclass klass, jobject thread, jint cnum, jint mnum)$/;"	f	file:
+MTRACE_native_entry	mtrace.c	85;"	d	file:
+MTRACE_native_exit	mtrace.c	/^MTRACE_native_exit(JNIEnv *env, jclass klass, jobject thread, jint cnum, jint mnum)$/;"	f	file:
+MTRACE_native_exit	mtrace.c	86;"	d	file:
+MethodInfo	mtrace.c	/^typedef struct MethodInfo {$/;"	s	file:
+MethodInfo	mtrace.c	/^} MethodInfo;$/;"	t	typeref:struct:MethodInfo	file:
+STRING	mtrace.c	91;"	d	file:
+_STRING	mtrace.c	90;"	d	file:
+calls	mtrace.c	/^    int         calls;         \/* Method call count *\/$/;"	m	struct:MethodInfo	file:
+calls	mtrace.c	/^    int         calls;         \/* Method call count for this class *\/$/;"	m	struct:ClassInfo	file:
+cbClassFileLoadHook	mtrace.c	/^cbClassFileLoadHook(jvmtiEnv *jvmti, JNIEnv* env,$/;"	f	file:
+cbThreadEnd	mtrace.c	/^cbThreadEnd(jvmtiEnv *jvmti, JNIEnv *env, jthread thread)$/;"	f	file:
+cbThreadStart	mtrace.c	/^cbThreadStart(jvmtiEnv *jvmti, JNIEnv *env, jthread thread)$/;"	f	file:
+cbVMDeath	mtrace.c	/^cbVMDeath(jvmtiEnv *jvmti, JNIEnv *env)$/;"	f	file:
+cbVMInit	mtrace.c	/^cbVMInit(jvmtiEnv *jvmti, JNIEnv *env, jthread thread)$/;"	f	file:
+cbVMStart	mtrace.c	/^cbVMStart(jvmtiEnv *jvmti, JNIEnv *env)$/;"	f	file:
+ccount	mtrace.c	/^    jint            ccount;$/;"	m	struct:__anon1	file:
+class_compar	mtrace.c	/^class_compar(const void *e1, const void *e2)$/;"	f	file:
+classes	mtrace.c	/^    ClassInfo      *classes;$/;"	m	struct:__anon1	file:
+enter_critical_section	mtrace.c	/^enter_critical_section(jvmtiEnv *jvmti)$/;"	f	file:
+exclude	mtrace.c	/^    char           *exclude;$/;"	m	struct:__anon1	file:
+exit_critical_section	mtrace.c	/^exit_critical_section(jvmtiEnv *jvmti)$/;"	f	file:
+gdata	mtrace.c	/^static GlobalAgentData *gdata;$/;"	v	file:
+get_thread_name	mtrace.c	/^get_thread_name(jvmtiEnv *jvmti, jthread thread, char *tname, int maxlen)$/;"	f	file:
+include	mtrace.c	/^    char           *include;$/;"	m	struct:__anon1	file:
+jvmti	mtrace.c	/^    jvmtiEnv      *jvmti;$/;"	m	struct:__anon1	file:
+lock	mtrace.c	/^    jrawMonitorID  lock;$/;"	m	struct:__anon1	file:
+max_count	mtrace.c	/^    int             max_count;$/;"	m	struct:__anon1	file:
+mcount	mtrace.c	/^    int         mcount;        \/* Method count *\/$/;"	m	struct:ClassInfo	file:
+method_compar	mtrace.c	/^method_compar(const void *e1, const void *e2)$/;"	f	file:
+methods	mtrace.c	/^    MethodInfo *methods;       \/* Method information *\/$/;"	m	struct:ClassInfo	file:
+mnum_callbacks	mtrace.c	/^mnum_callbacks(unsigned cnum, const char **names, const char**sigs, int mcount)$/;"	f	file:
+name	mtrace.c	/^    const char *name;          \/* Class name *\/$/;"	m	struct:ClassInfo	file:
+name	mtrace.c	/^    const char *name;          \/* Method name *\/$/;"	m	struct:MethodInfo	file:
+parse_agent_options	mtrace.c	/^parse_agent_options(char *options)$/;"	f	file:
+returns	mtrace.c	/^    int         returns;       \/* Method return count *\/$/;"	m	struct:MethodInfo	file:
+signature	mtrace.c	/^    const char *signature;     \/* Method signature *\/$/;"	m	struct:MethodInfo	file:
+vm_is_dead	mtrace.c	/^    jboolean       vm_is_dead;$/;"	m	struct:__anon1	file:
+vm_is_started	mtrace.c	/^    jboolean       vm_is_started;$/;"	m	struct:__anon1	file:

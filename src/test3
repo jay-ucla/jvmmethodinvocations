@@ -1,0 +1,148 @@
+Performing static invocation
+Hello static world
+Created Main class instance
+lambdaprint
+Invoked Main instance method
+Hello instance world J
+Invoked other Main instance method
+Hello instance world
+Invoking Main inner method
+Hello instance world
+Creating instance of Other class
+Invoked OC instance method - should call private hello
+Hello from the other world Jprivately
+Invoked other OC instance method - should call private hello
+Hello from the other world privately
+Invoking main class reflective hello from OC
+Hello reflective world . This call came from the OtherClass.
+Invoking dynamic proxy
+Dynamic Proxy hijacked : sayHello
+Invoking on object of Concrete A
+Hello from class A J
+default Hi from interfaceJJ
+static hi from interface
+Creating anonymous class
+Hi from the anonymous class
+default Hi from interfaceJJJ
+java.lang.Thread:getStackTrace
+com.test.Main:sayHello
+com.test.Main:main
+Hello world 
+Created instance of class
+I'm custom loaded
+Could not edit class java/io/Serializable
+Could not edit class java/lang/Comparable
+Could not edit class java/lang/reflect/GenericDeclaration
+Could not edit class java/lang/Cloneable
+Could not edit class java/lang/Runnable
+Could not edit class java/lang/Thread$UncaughtExceptionHandler
+Could not edit class java/lang/reflect/Member
+Could not edit class sun/reflect/MethodAccessor
+Could not edit class sun/reflect/ConstructorAccessor
+Could not edit class sun/reflect/FieldAccessor
+Could not edit class sun/reflect/CallerSensitive
+Could not edit class java/lang/annotation/Annotation
+Could not edit class java/lang/Appendable
+Could not edit class java/io/Closeable
+Could not edit class java/lang/AutoCloseable
+VMStart
+Could not edit class java/security/Guard
+Could not edit class java/security/PrivilegedAction
+Could not edit class java/util/RandomAccess
+Could not edit class sun/misc/JavaLangRefAccess
+Could not edit class sun/reflect/LangReflectAccess
+Could not edit class sun/nio/cs/HistoricallyNamedCharset
+Could not edit class sun/nio/cs/ArrayDecoder
+Could not edit class java/util/Enumeration
+Could not edit class sun/misc/JavaIOFileDescriptorAccess
+Could not edit class java/io/Flushable
+Could not edit class java/security/PrivilegedExceptionAction
+Could not edit class sun/nio/cs/ArrayEncoder
+Could not edit class sun/misc/JavaNioAccess
+Could not edit class java/nio/file/Watchable
+Could not edit class sun/misc/JavaLangAccess
+Could not edit class java/net/URLStreamHandlerFactory
+Could not edit class sun/misc/JavaNetAccess
+Could not edit class java/util/concurrent/locks/Lock
+Could not edit class sun/misc/JavaSecurityAccess
+Could not edit class sun/misc/JavaSecurityProtectionDomainAccess
+VMInit main
+ThreadStart Signal Dispatcher
+ThreadStart main
+Could not edit class java/util/zip/ZipConstants
+Could not edit class sun/misc/JavaUtilZipFileAccess
+Could not edit class sun/misc/JavaUtilJarAccess
+Could not edit class java/util/Deque
+Could not edit class java/util/Queue
+Could not edit class sun/nio/ch/DirectBuffer
+Could not edit class java/lang/Readable
+Could not edit class sun/nio/ByteBuffered
+Could not edit class java/util/ListIterator
+Could not edit class java/lang/reflect/InvocationHandler
+Could not edit class com/test/ProxiedClass
+Could not edit class java/util/function/Supplier
+Could not edit class java/io/DataOutput
+Could not edit class java/lang/reflect/WeakCache$Value
+Could not edit class sun/net/ProgressMeteringPolicy
+ThreadEnd main
+ThreadStart DestroyJavaVM
+ThreadEnd DestroyJavaVM
+VMDeath
+Begin Class Stats
+Class com/test/Main 22 calls
+	Method staticHello (Ljava/lang/String;)V 12 calls 12 returns
+	Method instanceHello ()V 2 calls 2 returns
+	Method main ([Ljava/lang/String;)V 1 calls 1 returns
+	Method reflectiveHello (Ljava/lang/String;)V 1 calls 1 returns
+	Method innerHello ()V 1 calls 1 returns
+	Method instanceHello (Ljava/lang/String;)V 1 calls 1 returns
+	Method lambdaPrint (Ljava/lang/String;)Z 1 calls 1 returns
+	Method staticHello ()V 1 calls 1 returns
+	Method sayHello (Ljava/lang/String;)V 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+Class com/test/OtherClass 7 calls
+	Method privateHello (Ljava/lang/String;)V 2 calls 2 returns
+	Method dynamicProxyRun ()V 1 calls 1 returns
+	Method reflectOnMe (Lcom/test/Main;)V 1 calls 1 returns
+	Method instanceHello (Ljava/lang/String;)V 1 calls 1 returns
+	Method instanceHello ()V 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+	Method unusedHello ()V 0 calls 0 returns
+Class com/test/CustomClassLoaderTarget 3 calls
+	Method accessMethod ()V 1 calls 1 returns
+	Method customClassPrint ()V 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+Class com/test/CustomClassLoader 3 calls
+	Method loadClassFromFile (Ljava/lang/String;)[B 1 calls 1 returns
+	Method findClass (Ljava/lang/String;)Ljava/lang/Class; 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+Class com/sun/proxy/$Proxy0 3 calls
+	Method <clinit> ()V 1 calls 1 returns
+	Method sayHello ()V 1 calls 1 returns
+	Method <init> (Ljava/lang/reflect/InvocationHandler;)V 1 calls 1 returns
+	Method hashCode ()I 0 calls 0 returns
+	Method toString ()Ljava/lang/String; 0 calls 0 returns
+	Method equals (Ljava/lang/Object;)Z 0 calls 0 returns
+Class com/test/interfaceClass 3 calls
+	Method defaultHello (Ljava/lang/String;)V 2 calls 2 returns
+	Method defaultstatic ()V 1 calls 1 returns
+	Method interfacedHello (Ljava/lang/String;)V 0 calls 0 returns
+Class com/test/Main$1 2 calls
+	Method interfacedHello (Ljava/lang/String;)V 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+Class com/test/concreteA 2 calls
+	Method interfacedHello (Ljava/lang/String;)V 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+Class com/test/DynamicProxy 2 calls
+	Method invoke (Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object; 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+Class com/test/Main$$Lambda$1 2 calls
+	Method test (Ljava/lang/Object;)Z 1 calls 1 returns
+	Method <init> ()V 1 calls 1 returns
+Class com/test/CustomClassLoaderTarget 0 calls
+	Method accessMethod ()V 0 calls 0 returns
+	Method customClassPrint ()V 0 calls 0 returns
+	Method <init> ()V 0 calls 0 returns
+Class com/test/ProxiedClass 0 calls
+	Method sayHello ()V 0 calls 0 returns
+End Class Stats

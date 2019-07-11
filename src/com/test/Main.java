@@ -11,7 +11,7 @@ public class Main {
                 System.out.println(e.getClassName()+":"+e.getMethodName());
         }
         try {
-            Thread.sleep(100);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -69,7 +69,7 @@ public class Main {
         Main.staticHello("Invoked other OC instance method - should call private hello");
         oc.instanceHello();
         Main.staticHello("Invoking main class reflective hello from OC");
-        OtherClass.refelctOnMe(m);
+        OtherClass.reflectOnMe(m);
         Main.staticHello("Invoking dynamic proxy");
         oc.dynamicProxyRun();
 
@@ -87,6 +87,8 @@ public class Main {
             }
         } ;
         ac.interfacedHello("");
+        ac.defaultHello("JJJ");
+        m.sayHello("");
         CustomClassLoader customClassLoader = new CustomClassLoader();
         Class<?> c = null;
         try {

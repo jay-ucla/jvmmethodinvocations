@@ -12,7 +12,7 @@ static void check_jvmti_errors(jvmtiEnv *jvmti, jvmtiError errnum, const char *s
 
         (void) (*jvmti)->GetErrorName(jvmti, errnum, &errnum_str);
 
-        fprintf(stderr,"ERROR: JVMTI: [%d] %s - %s", errnum, (errnum_str == NULL ? "Unknown": errnum_str), (str == NULL? "" : str));
+        fprintf(stdout,"ERROR: JVMTI: [%d] %s - %s", errnum, (errnum_str == NULL ? "Unknown": errnum_str), (str == NULL? "" : str));
 
     }
 
@@ -52,7 +52,7 @@ static void JNICALL callbackMethodEntry(jvmtiEnv *jvmti, JNIEnv *jni, jthread th
     if(strcmp(class_name,"java")==0 || strcmp(class_name,"sun/")==0 || strcmp(class_name, "jdk/")==0)
 	return;
     
-    fprintf(stderr,"Entered method %s %s %s\n",class_ptr, name_ptr, signature_ptr);
+    fprintf(stdout,"Entered method %s %s %s\n",class_ptr, name_ptr, signature_ptr);
     //strcat(jmvti_string, class_ptr);
     //free(msg);
 };
