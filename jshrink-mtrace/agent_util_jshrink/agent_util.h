@@ -55,6 +55,7 @@ extern "C" {
 #endif
 
 void  stdout_message(const char * format, ...);
+void log_message(FILE *f, const char * format, ...);
 void  fatal_error(const char * format, ...);
 char *get_token(char *str, char *seps, char *buf, int max);
 int   interested(char *cname, char *mname,

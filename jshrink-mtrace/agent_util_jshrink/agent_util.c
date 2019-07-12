@@ -44,6 +44,14 @@
 /* Generic C utility functions */
 
 /* Send message to stdout or whatever the data output location is */
+void log_message(FILE *f, const char * format, ...)
+{
+    va_list ap;
+    va_start(ap, format);
+    (void)vfprintf(f, format, ap);
+    va_end(ap);
+}
+
 void
 stdout_message(const char * format, ...)
 {

@@ -41,7 +41,7 @@
 #include "stdlib.h"
 
 #include "mtrace.h"
-#include "java_crw_demo.h"
+#include "java_crw_jshrink.h"
 
 
 /* ------------------------------------------------------------------- */
@@ -124,6 +124,9 @@ typedef struct {
     /* ClassInfo Table */
     ClassInfo      *classes;
     jint            ccount;
+
+    /*Logfile*/
+   FILE *log;
 } GlobalAgentData;
 
 static GlobalAgentData *gdata;
@@ -300,7 +303,7 @@ cbVMStart(jvmtiEnv *jvmti, JNIEnv *env)
         jclass   klass;
         jfieldID field;
         int      rc;
-
+	
         /* Java Native Methods for class */
         static JNINativeMethod registry[2] = {
             {STRING(MTRACE_native_entry), "(Ljava/lang/Object;II)V",
@@ -308,9 +311,9 @@ cbVMStart(jvmtiEnv *jvmti, JNIEnv *env)
             {STRING(MTRACE_native_exit),  "(Ljava/lang/Object;II)V",
                 (void*)&MTRACE_native_exit}
         };
-
+	
         /* The VM has started. */
-        stdout_message("VMStart\n");
+        log_message(gdata->log, "VMStart\n");
 
         /* Register Natives for class whose methods we use */
         klass = (*env)->FindClass(env, STRING(MTRACE_class));
@@ -350,7 +353,7 @@ cbVMInit(jvmtiEnv *jvmti, JNIEnv *env, jthread thread)
 
         /* The VM has started. */
         get_thread_name(jvmti, thread, tname, sizeof(tname));
-        stdout_message("VMInit %s\n", tname);
+        log_message(gdata->log, "VMInit %s\n", tname);
 
         /* The VM is now initialized, at this time we make our requests
          *   for additional events.
@@ -377,7 +380,7 @@ cbVMDeath(jvmtiEnv *jvmti, JNIEnv *env)
         jfieldID field;
 
         /* The VM has died. */
-        stdout_message("VMDeath\n");
+        log_message(gdata->log, "VMDeath\n");
 
         /* Disengage calls in MTRACE_class. */
         klass = (*env)->FindClass(env, STRING(MTRACE_class));
@@ -406,7 +409,7 @@ cbVMDeath(jvmtiEnv *jvmti, JNIEnv *env)
         gdata->vm_is_dead = JNI_TRUE;
 
         /* Dump out stats */
-        stdout_message("Begin Class Stats\n");
+        log_message(gdata->log, "Begin Class Stats\n");
         if ( gdata->ccount > 0 ) {
             int cnum;
 
@@ -429,9 +432,9 @@ cbVMDeath(jvmtiEnv *jvmti, JNIEnv *env)
 			class_name[i]=cp->name[i];
 		    }
 		    class_name[4]='\0';
-		    if(strcmp(cp->name,"java")==0 || strcmp(cp->name,"sun/")==0 || strcmp(cp->name, "jdk/")==0)
+		    if(strcmp(class_name,"java")==0 || strcmp(class_name,"sun/")==0 || strcmp(class_name, "jdk/")==0)
 			continue;
-                stdout_message("Class %s %d calls\n", cp->name, cp->calls);
+                log_message(gdata->log, "Class,%s,%d,calls\n", cp->name, cp->calls);
                 //if ( cp->calls==0 ) continue;
 
                 /* Sort method table (in place) by number of method calls. */
@@ -443,13 +446,13 @@ cbVMDeath(jvmtiEnv *jvmti, JNIEnv *env)
 
                     mp = cp->methods + mnum;
                     //if ( mp->calls==0 ) continue;
-                    stdout_message("\tMethod %s %s %d calls %d returns\n",
+                    log_message(gdata->log, "Method,%s,%s,%d,calls,%d,returns\n",
                         mp->name, mp->signature, mp->calls, mp->returns);
                 }
             }
         }
-        stdout_message("End Class Stats\n");
-        (void)fflush(stdout);
+        log_message(gdata->log, "End Class Stats\n");
+        (void)fflush(gdata->log);
 
     } exit_critical_section(jvmti);
 
@@ -465,7 +468,7 @@ cbThreadStart(jvmtiEnv *jvmti, JNIEnv *env, jthread thread)
             char  tname[MAX_THREAD_NAME_LENGTH];
 
             get_thread_name(jvmti, thread, tname, sizeof(tname));
-            stdout_message("ThreadStart %s\n", tname);
+            log_message(gdata->log, "ThreadStart %s\n", tname);
         }
     } exit_critical_section(jvmti);
 }
@@ -480,7 +483,7 @@ cbThreadEnd(jvmtiEnv *jvmti, JNIEnv *env, jthread thread)
             char  tname[MAX_THREAD_NAME_LENGTH];
 
             get_thread_name(jvmti, thread, tname, sizeof(tname));
-            stdout_message("ThreadEnd %s\n", tname);
+            log_message(gdata->log, "ThreadEnd %s\n", tname);
         }
     } exit_critical_section(jvmti);
 }
@@ -591,7 +594,7 @@ cbClassFileLoadHook(jvmtiEnv *jvmti, JNIEnv* env,
                     *new_class_data     = jvmti_space; /* VM will deallocate */
                 }
 		else{
-			fprintf(stdout,"Could not edit class %s\n",classname);
+			log_message(gdata->log, "Could not edit class %s\n",classname);
 		}
 
                 /* Always free up the space we get from java_crw_demo() */
@@ -624,19 +627,19 @@ parse_agent_options(char *options)
     /* While not at the end of the options string, process this option. */
     while ( next != NULL ) {
         if ( strcmp(token,"help")==0 ) {
-            stdout_message("The mtrace JVMTI demo agent\n");
-            stdout_message("\n");
-            stdout_message(" java -agent:mtrace[=options] ...\n");
-            stdout_message("\n");
-            stdout_message("The options are comma separated:\n");
-            stdout_message("\t help\t\t\t Print help information\n");
-            stdout_message("\t max=n\t\t Only list top n classes\n");
-            stdout_message("\t include=item\t\t Only these classes/methods\n");
-            stdout_message("\t exclude=item\t\t Exclude these classes/methods\n");
-            stdout_message("\n");
-            stdout_message("item\t Qualified class and/or method names\n");
-            stdout_message("\t\t e.g. (*.<init>;Foobar.method;sun.*)\n");
-            stdout_message("\n");
+            log_message(gdata->log, "The mtrace JVMTI demo agent\n");
+            log_message(gdata->log, "\n");
+            log_message(gdata->log, " java -agent:mtrace[=options] ...\n");
+            log_message(gdata->log, "\n");
+            log_message(gdata->log, "The options are comma separated:\n");
+            log_message(gdata->log, "\t help\t\t\t Print help information\n");
+            log_message(gdata->log, "\t max=n\t\t Only list top n classes\n");
+            log_message(gdata->log, "\t include=item\t\t Only these classes/methods\n");
+            log_message(gdata->log, "\t exclude=item\t\t Exclude these classes/methods\n");
+            log_message(gdata->log, "\n");
+            log_message(gdata->log, "item\t Qualified class and/or method names\n");
+            log_message(gdata->log, "\t\t e.g. (*.<init>;Foobar.method;sun.*)\n");
+            log_message(gdata->log, "\n");
             exit(0);
         } else if ( strcmp(token,"max")==0 ) {
             char number[MAX_TOKEN_LENGTH];
@@ -727,7 +730,7 @@ Agent_OnLoad(JavaVM *vm, char *options, void *reserved)
      */
     (void)memset((void*)&data, 0, sizeof(data));
     gdata = &data;
-
+    gdata->log = fopen("jmtrace.log", "w");
     /* First thing we need to do is get the jvmtiEnv* or JVMTI environment */
     res = (*vm)->GetEnv(vm, (void **)&jvmti, JVMTI_VERSION_1);
     if (res != JNI_OK) {
@@ -843,4 +846,5 @@ Agent_OnUnload(JavaVM *vm)
         (void)free((void*)gdata->classes);
         gdata->classes = NULL;
     }
+    fclose(gdata->log);
 }
