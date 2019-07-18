@@ -1,4 +1,4 @@
-export AGENTPATH="-Xbootclasspath/a:/home/jay/openjdk/jdk8-jdk/src/share/demo/jvmti/mtrace/mtrace.jar -agentpath:/home/jay/openjdk/jdk8-jdk/src/share/demo/jvmti/mtrace/libmtrace.so"
+export AGENTPATH="-Xbootclasspath/a:/home/jay/openjdktest/test/jshrink-mtrace/jmtrace/jmtrace.jar -agentpath:/home/jay/openjdktest/test/jshrink-mtrace/jmtrace/libjmtrace.so"
 
 run_headless(){
 	echo Starting $1

@@ -1,6 +1,7 @@
 package com.test;
 
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.util.function.Predicate;
 
 public class Main {
@@ -88,15 +89,16 @@ public class Main {
         } ;
         ac.interfacedHello("");
         ac.defaultHello("JJJ");
-        m.sayHello("");
+        //m.sayHello("");
         CustomClassLoader customClassLoader = new CustomClassLoader();
         Class<?> c = null;
         try {
-            c = customClassLoader.findClass(CustomClassLoaderTarget.class.getName());
-            Object ob = c.newInstance();
+            //c = customClassLoader.findClass(CustomClassLoaderTarget.class.getName());
+            URL url = customClassLoader.getResource("CustomClassLoaderTarget.java");
+            //Object ob = c.newInstance();
 
-            Method md = c.getMethod("accessMethod");
-            md.invoke(ob);
+            //Method md = c.getMethod("accessMethod");
+            //md.invoke(ob);
         } catch (Exception e) {
             e.printStackTrace();
         }
