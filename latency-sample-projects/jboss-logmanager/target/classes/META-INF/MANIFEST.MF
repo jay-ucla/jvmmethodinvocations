@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bundle-Description: An implementation of java.util.logging.LogManager
+Bundle-License: http://repository.jboss.org/licenses/cc0-1.0.txt
+Bundle-SymbolicName: org.jboss.logmanager.jboss-logmanager
+Build-Timestamp: Sat, 6 Jul 2019 17:47:39 -0700
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1562460462429
+Bundle-DocURL: http://www.jboss.org
+Bundle-Vendor: JBoss by Red Hat
+Import-Package: org.jboss.logmanager;version="1.4",org.jboss.logmanage
+ r.config;version="1.4",org.jboss.logmanager.errormanager;version="1.4
+ ",org.jboss.logmanager.filters;version="1.4",org.jboss.logmanager.for
+ matters;version="1.4",org.jboss.logmanager.handlers;version="1.4",org
+ .jboss.modules
+Tool: Bnd-0.0.357
+Originally-Created-By: 1.8.0_212 (Oracle Corporation)
+Export-Package: org.jboss.logmanager.config;uses:="org.jboss.modules,o
+ rg.jboss.logmanager,org.jboss.logmanager.filters";version="1.4.0.Beta
+ 1-SNAPSHOT",org.jboss.logmanager.filters;uses:="org.jboss.logmanager"
+ ;version="1.4.0.Beta1-SNAPSHOT",org.jboss.logmanager.handlers;uses:="
+ org.jboss.logmanager,org.jboss.logmanager.formatters";version="1.4.0.
+ Beta1-SNAPSHOT",org.jboss.logmanager;uses:="org.jboss.logmanager.hand
+ lers,org.jboss.logmanager.config";version="1.4.0.Beta1-SNAPSHOT",org.
+ jboss.logmanager.formatters;uses:="org.jboss.logmanager";version="1.4
+ .0.Beta1-SNAPSHOT",org.jboss.logmanager.errormanager;version="1.4.0.B
+ eta1-SNAPSHOT"
+Scm-Revision: 5d0f32271aae48e691b847f83e0676b55a784916
+Bundle-Version: 1.4.0.Beta1-SNAPSHOT
+Bundle-Name: JBoss Log Manager
+Created-By: 1.8.0_212 (Oracle Corporation)
+

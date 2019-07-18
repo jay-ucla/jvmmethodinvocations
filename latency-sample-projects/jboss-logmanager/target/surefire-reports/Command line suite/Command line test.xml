@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Command line test" failures="0" tests="42" time="4.601" errors="0">
+  <properties/>
+  <testcase name="testPerformance" time="4.527" classname="org.jboss.logmanager.FileHandlerPerformanceTests"/>
+  <testcase name="testInvertFilter0" time="0.004" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAllFilter3" time="0.002" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testInvertFilter1" time="0.0" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAllFilter2" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAllFilter1" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAllFilter0" time="0.0" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testSubstituteFilter2" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testSubstituteFilter3" time="0.002" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAcceptAllFilter" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testSubstituteFilter1" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testSubstitueFilter0" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testLevelChangingFilter0" time="0.003" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testDenyAllFilter" time="0.0" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAnyFilter0" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAnyFilter1" time="0.0" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAnyFilter2" time="0.0" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testLevelFilter1" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testAnyFilter3" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testLevelFilter0" time="0.0" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testLevelRangeFilter4" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testLevelRangeFilter3" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testRegexFilter0" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testRegexFilter1" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testLevelRangeFilter2" time="0.001" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testLevelRangeFilter1" time="0.0" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testLevelRangeFilter0" time="0.0" classname="org.jboss.logmanager.FilterTests"/>
+  <testcase name="testWriterHandler" time="0.0" classname="org.jboss.logmanager.HandlerTests"/>
+  <testcase name="testNullHandler" time="0.001" classname="org.jboss.logmanager.HandlerTests"/>
+  <testcase name="testFileHandler" time="0.002" classname="org.jboss.logmanager.HandlerTests"/>
+  <testcase name="testOutputStreamHandler" time="0.001" classname="org.jboss.logmanager.HandlerTests"/>
+  <testcase name="testEnableDisableHandler" time="0.001" classname="org.jboss.logmanager.HandlerTests"/>
+  <testcase name="testHandlerAdd" time="0.0" classname="org.jboss.logmanager.LoggerTests"/>
+  <testcase name="testResourceBundle" time="0.003" classname="org.jboss.logmanager.LoggerTests"/>
+  <testcase name="testHandlerClear" time="0.0" classname="org.jboss.logmanager.LoggerTests"/>
+  <testcase name="testHandlerAdd2" time="0.001" classname="org.jboss.logmanager.LoggerTests"/>
+  <testcase name="testInstall" time="0.0" classname="org.jboss.logmanager.LoggerTests"/>
+  <testcase name="testHandlerRemove2" time="0.0" classname="org.jboss.logmanager.LoggerTests"/>
+  <testcase name="testHandlerRun" time="0.0" classname="org.jboss.logmanager.LoggerTests"/>
+  <testcase name="testHandlerRemove" time="0.0" classname="org.jboss.logmanager.LoggerTests"/>
+  <testcase name="testHandlerLock" time="0.002" classname="org.jboss.logmanager.ProtectTests"/>
+  <testcase name="testLogContextLock" time="0.0" classname="org.jboss.logmanager.ProtectTests"/>
+</testsuite>

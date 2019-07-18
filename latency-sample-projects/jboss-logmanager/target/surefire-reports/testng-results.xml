@@ -1,0 +1,107 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite">
+    <groups>
+      <group name="performance">
+        <method signature="org.jboss.logmanager.FileHandlerPerformanceTests.testPerformance()" name="testPerformance" class="org.jboss.logmanager.FileHandlerPerformanceTests"/>
+      </group>
+    </groups>
+    <test name="Command line test">
+      <class name="org.jboss.logmanager.FilterTests">
+        <test-method status="PASS" signature="testAnyFilter0()" name="testAnyFilter0" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testAllFilter2()" name="testAllFilter2" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testAnyFilter1()" name="testAnyFilter1" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testInvertFilter0()" name="testInvertFilter0" duration-ms="4" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testLevelRangeFilter0()" name="testLevelRangeFilter0" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testAllFilter1()" name="testAllFilter1" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testLevelFilter0()" name="testLevelFilter0" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testAllFilter0()" name="testAllFilter0" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testLevelRangeFilter2()" name="testLevelRangeFilter2" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testLevelChangingFilter0()" name="testLevelChangingFilter0" duration-ms="3" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testSubstituteFilter3()" name="testSubstituteFilter3" duration-ms="2" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testAcceptAllFilter()" name="testAcceptAllFilter" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testDenyAllFilter()" name="testDenyAllFilter" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testLevelRangeFilter4()" name="testLevelRangeFilter4" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testInvertFilter1()" name="testInvertFilter1" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testSubstituteFilter2()" name="testSubstituteFilter2" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testAnyFilter2()" name="testAnyFilter2" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testLevelFilter1()" name="testLevelFilter1" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testLevelRangeFilter3()" name="testLevelRangeFilter3" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testSubstitueFilter0()" name="testSubstitueFilter0" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testLevelRangeFilter1()" name="testLevelRangeFilter1" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testAnyFilter3()" name="testAnyFilter3" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testRegexFilter1()" name="testRegexFilter1" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testSubstituteFilter1()" name="testSubstituteFilter1" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testAllFilter3()" name="testAllFilter3" duration-ms="2" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testRegexFilter0()" name="testRegexFilter0" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+      </class>
+      <class name="org.jboss.logmanager.FileHandlerPerformanceTests">
+        <test-method status="PASS" signature="testPerformance()" name="testPerformance" duration-ms="4527" started-at="2019-07-06T17:47:43Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+      </class>
+      <class name="org.jboss.logmanager.HandlerTests">
+        <test-method status="PASS" signature="testWriterHandler()" name="testWriterHandler" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testNullHandler()" name="testNullHandler" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testEnableDisableHandler()" name="testEnableDisableHandler" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testFileHandler()" name="testFileHandler" duration-ms="2" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testOutputStreamHandler()" name="testOutputStreamHandler" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+      </class>
+      <class name="org.jboss.logmanager.ProtectTests">
+        <test-method status="PASS" signature="testLogContextLock()" name="testLogContextLock" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testHandlerLock()" name="testHandlerLock" duration-ms="2" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+      </class>
+      <class name="org.jboss.logmanager.LoggerTests">
+        <test-method status="PASS" signature="testHandlerClear()" name="testHandlerClear" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testHandlerAdd()" name="testHandlerAdd" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testInstall()" name="testInstall" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testHandlerRemove2()" name="testHandlerRemove2" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testHandlerAdd2()" name="testHandlerAdd2" duration-ms="1" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testHandlerRun()" name="testHandlerRun" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testResourceBundle()" name="testResourceBundle" duration-ms="3" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+        <test-method status="PASS" signature="testHandlerRemove()" name="testHandlerRemove" duration-ms="0" started-at="2019-07-06T17:47:47Z" finished-at="2019-07-06T17:47:47Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

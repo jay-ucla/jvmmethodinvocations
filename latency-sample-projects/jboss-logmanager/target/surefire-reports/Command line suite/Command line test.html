@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>42/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jul 06 17:47:43 PDT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4601 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAcceptAllFilter()'>testAcceptAllFilter</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAllFilter0()'>testAllFilter0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAllFilter1()'>testAllFilter1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAllFilter2()'>testAllFilter2</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAllFilter3()'>testAllFilter3</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAnyFilter0()'>testAnyFilter0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAnyFilter1()'>testAnyFilter1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAnyFilter2()'>testAnyFilter2</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testAnyFilter3()'>testAnyFilter3</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testDenyAllFilter()'>testDenyAllFilter</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.HandlerTests.testEnableDisableHandler()'>testEnableDisableHandler</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.HandlerTests.testFileHandler()'>testFileHandler</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.LoggerTests.testHandlerAdd()'>testHandlerAdd</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.LoggerTests.testHandlerAdd2()'>testHandlerAdd2</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.LoggerTests.testHandlerClear()'>testHandlerClear</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.ProtectTests.testHandlerLock()'>testHandlerLock</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.LoggerTests.testHandlerRemove()'>testHandlerRemove</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.LoggerTests.testHandlerRemove2()'>testHandlerRemove2</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.LoggerTests.testHandlerRun()'>testHandlerRun</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.LoggerTests.testInstall()'>testInstall</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testInvertFilter0()'>testInvertFilter0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testInvertFilter1()'>testInvertFilter1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testLevelChangingFilter0()'>testLevelChangingFilter0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testLevelFilter0()'>testLevelFilter0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testLevelFilter1()'>testLevelFilter1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testLevelRangeFilter0()'>testLevelRangeFilter0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testLevelRangeFilter1()'>testLevelRangeFilter1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testLevelRangeFilter2()'>testLevelRangeFilter2</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testLevelRangeFilter3()'>testLevelRangeFilter3</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testLevelRangeFilter4()'>testLevelRangeFilter4</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.ProtectTests.testLogContextLock()'>testLogContextLock</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.HandlerTests.testNullHandler()'>testNullHandler</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.HandlerTests.testOutputStreamHandler()'>testOutputStreamHandler</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FileHandlerPerformanceTests.testPerformance()'>testPerformance</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testRegexFilter0()'>testRegexFilter0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testRegexFilter1()'>testRegexFilter1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.LoggerTests.testResourceBundle()'>testResourceBundle</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testSubstitueFilter0()'>testSubstitueFilter0</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testSubstituteFilter1()'>testSubstituteFilter1</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testSubstituteFilter2()'>testSubstituteFilter2</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.FilterTests.testSubstituteFilter3()'>testSubstituteFilter3</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='org.jboss.logmanager.HandlerTests.testWriterHandler()'>testWriterHandler</td>
+<td>0</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

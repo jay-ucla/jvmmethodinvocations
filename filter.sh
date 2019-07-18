@@ -1,1 +1,0 @@
-awk '!/junit/ && !/intellij/ {print}'
