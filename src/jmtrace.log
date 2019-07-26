@@ -1,14 +1,16 @@
 VMStart
 VMInit main
+ThreadStart Signal Dispatcher
 ThreadStart main
 Could not edit class com/test/ProxiedClass
+Could not edit class com/test/interfaceWithInnerClass
 ThreadEnd main
 ThreadStart DestroyJavaVM
 ThreadEnd DestroyJavaVM
 VMDeath
 Begin Class Stats
-Class,com/test/Main,21,calls
-Method,staticHello,(Ljava/lang/String;)V,12,calls,12,returns
+Class,com/test/Main,22,calls
+Method,staticHello,(Ljava/lang/String;)V,13,calls,13,returns
 Method,instanceHello,()V,2,calls,2,returns
 Method,main,([Ljava/lang/String;)V,1,calls,1,returns
 Method,reflectiveHello,(Ljava/lang/String;)V,1,calls,1,returns
@@ -26,6 +28,10 @@ Method,instanceHello,(Ljava/lang/String;)V,1,calls,1,returns
 Method,instanceHello,()V,1,calls,1,returns
 Method,<init>,()V,1,calls,1,returns
 Method,unusedHello,()V,0,calls,0,returns
+Class,com/test/interfaceWithInnerClass$innerClassToInterface,3,calls
+Method,<clinit>,()V,1,calls,1,returns
+Method,sayHello,()V,1,calls,1,returns
+Method,<init>,()V,1,calls,1,returns
 Class,com/sun/proxy/$Proxy0,3,calls
 Method,<clinit>,()V,1,calls,1,returns
 Method,sayHello,()V,1,calls,1,returns
@@ -49,10 +55,15 @@ Method,<init>,()V,1,calls,1,returns
 Class,com/test/Main$$Lambda$1,2,calls
 Method,test,(Ljava/lang/Object;)Z,1,calls,1,returns
 Method,<init>,()V,1,calls,1,returns
+Class,com/test/concreteWithInnerClass,1,calls
+Method,<init>,()V,1,calls,1,returns
+Method,interfaceInnerTarget,()V,0,calls,0,returns
 Class,com/test/CustomClassLoader,1,calls
 Method,<init>,()V,1,calls,1,returns
 Method,loadClassFromFile,(Ljava/lang/String;)[B,0,calls,0,returns
 Method,findClass,(Ljava/lang/String;)Ljava/lang/Class;,0,calls,0,returns
+Class,com/test/interfaceWithInnerClass,0,calls
+Method,interfaceInnerTarget,()V,0,calls,0,returns
 Class,com/test/ProxiedClass,0,calls
 Method,sayHello,()V,0,calls,0,returns
 End Class Stats

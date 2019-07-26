@@ -103,5 +103,8 @@ public class Main {
             e.printStackTrace();
         }
 
+        Main.staticHello("Interface with inner class");
+        new concreteWithInnerClass();
+        new concreteWithInnerClass.innerClassToInterface().sayHello();
     }
 }
